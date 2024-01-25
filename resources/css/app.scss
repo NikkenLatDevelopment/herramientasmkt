@@ -54,12 +54,14 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
         z-index: -1;
     }
 
-    h1{
-        font-size: 73px;
-        line-height: 120%;
+    .content{
+        h1{
+            font-size: 73px;
+            line-height: 120%;
 
-        span{
-            font-size: 120px;
+            span{
+                font-size: 120px;
+            }
         }
     }
 
@@ -69,7 +71,7 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
 }
 
 .step-1{
-    .border-radius-bottom-right{
+    .border-bottom-right-radius{
         border-bottom-right-radius: 100px;
     }
 }
@@ -84,7 +86,7 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
         padding-left: 150px;
     }
 
-    .border-radius-bottom-left{
+    .border-bottom-left-radius{
         border-bottom-left-radius: 60px;
     }
 }
@@ -98,7 +100,7 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
     .content{
         top: -70px;
 
-        .border-radius-bottom-right{
+        .border-bottom-right-radius{
             border-bottom-right-radius: 50px;
         }
 
@@ -114,14 +116,10 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
         background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
     }
 
-    .bg-step{
-        right: -180px;
-    }
-
     .content{
         padding-left: 200px;
 
-        &.border-radius-bottom-right{
+        &.border-bottom-right-radius{
             border-bottom-right-radius: 20px;
         }
 
@@ -144,7 +142,7 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
         border-radius: 15px;
     }
 
-    .border-radius-bottom-left{
+    .border-bottom-left-radius{
         border-bottom-left-radius: 200px;
     }
 
@@ -175,7 +173,7 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
             background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
         }
 
-        .border-radius-bottom-right{
+        .border-bottom-right-radius{
             border-bottom-right-radius: 100px;
         }
 
@@ -203,6 +201,48 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
     .background{
         background: #fcfcfd;
     }
+
+    .content{
+        width: 65%;
+
+        &.border-bottom-right-radius{
+            border-bottom-right-radius: 150px;
+        }
+
+        &.border-radius-top-right{
+            border-top-right-radius: 150px;
+        }
+
+        .with{
+            width: 180px;
+        }
+    }
+}
+
+.step-10{
+    margin-top: 100px;
+
+    .background{
+        background: rgb(124,178,42);
+        background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
+    }
+
+    .title{
+        .h1{
+            font-size: 70px;
+        }
+
+        .text{
+            padding-left: 180px;
+        }
+
+        img{
+            position: absolute;
+            top: -60px;
+            left: 222px;
+            max-width: 177px;
+        }
+    }
 }
 
 //Navbar
@@ -227,3 +267,4 @@ $input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
         z-index: 1;
     }
 }
+

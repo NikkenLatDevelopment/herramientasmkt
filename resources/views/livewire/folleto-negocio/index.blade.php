@@ -36,13 +36,13 @@
 
                     <div class="row">
                         <div class="col">
-                            <div class="p-5 m-5">
+                            <div class="p-5 m-5 content">
                                 <h1 class="text-white fw-light text-uppercase mb-4">Mi folleto de <span class="fw-bold d-block">negocio</span></h1>
                                 <p class="text-white custom text-justify">¡Felicidades! Por haber elegido ser parte de la comunidad de Bienestar más grande del mundo. En NIKKEN® nos sentimos felices cada vez que alguien como tú decide iniciar su negocio, gente entregada y entusiasta por mejorar el mundo y por dar a conocer contribuir a mejorar la calidad de vida de más personas.</p>
                             </div>
                         </div>
 
-                        <div class="col position-relative"><img src="{{ asset('assets/img/general/bienvenida.png') }}" srcset="{{ asset('assets/img/general/bienvenida-2x.png') }} 2x" class="position-absolute banner" alt="NIKKEN Latinoamérica"></div>
+                        <div class="col position-relative"><img src="{{ asset('assets/img/general/bienvenida.png') }}" srcset="{{ asset('assets/img/general/bienvenida-2x.png') }} 2x" class="position-absolute banner" alt="Mi Folleto de Negocio"></div>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 bg-light border-radius-bottom-right">
+                <div class="col-6 bg-light border-bottom-right-radius">
                     <div class="p-5">
                         <h2 class="text-success fw-bold text-center my-4">Compromiso</h2>
                         <p class="custom text-justify">Nuestro compromiso en NIKKEN® es acompañarte a descubrir cómo puedes impactar  al mundo a través de la vivencia de una misión personal que te permita vivir en balance.</p>
@@ -93,7 +93,7 @@
 
         <section class="step-2">
             <div class="row mt-5">
-                <div class="col position-relative"><img src="{{ asset('assets/img/general/motivacion-negocio.png') }}" srcset="{{ asset('assets/img/general/motivacion-negocio-2x.png') }} 2x" class="position-absolute custom z-index-1" alt="Dale un motivo a tu negocio"></div>
+                <div class="col position-relative"><img src="{{ asset('assets/img/general/motivacion-negocio.png') }}" srcset="{{ asset('assets/img/general/motivacion-negocio-2x.png') }} 2x" class="position-absolute custom z-index-1" alt="Dale un Motivo a tu Negocio"></div>
 
                 <div class="col">
                     <div class="text-end mb-5 pb-3"><img src="{{ asset('assets/img/general/paso-1.png') }}" srcset="{{ asset('assets/img/general/paso-1-2x.png') }} 2x" class="img-fluid" alt="Paso 1"></div>
@@ -103,7 +103,7 @@
                         <p class="custom text-justify">Una de las cosas que más nos motiva a dar ese esfuerzo extra es tener muy porqué estamos haciendo las comas. ¿Qué es lo que vamos a obtener a cambio de nuestro trabajo?</p>
                     </div>
 
-                    <div class="bg-light position-relative border-radius-bottom-left">
+                    <div class="bg-light position-relative border-bottom-left-radius">
                         <img src="{{ asset('assets/img/general/logo-emprendedor.png') }}" srcset="{{ asset('assets/img/general/logo-emprendedor-2x.png') }} 2x" class="img-fluid position-absolute bg-step" alt="Logo Emprendedor">
 
                         <div class="pb-4 pt-5 pe-4 content">
@@ -136,7 +136,7 @@
             </div>
 
             <div class="position-relative pe-5 content">
-                <div class="bg-light px-5 py-5 border-radius-top-right border-radius-bottom-right">
+                <div class="bg-light px-5 py-5 border-radius-top-right border-bottom-right-radius">
                     <h2 class="text-success fw-bold mb-3">Objetivo Financiero</h2>
 
                     <p class="fw-bold mb-0">Corto plazo:</p>
@@ -151,17 +151,17 @@
 
                     <div class="row gx-2 d-flex align-items-center mb-2">
                         <div class="col-auto"><input type="text" class="form-control" id="step-3-form-comments-three"></div>
-                        <div class="col-auto">nuevos inscritos con Kit Sistema de Agua PiMag®</div>
+                        <div class="col-auto"><p class="mb-0">nuevos inscritos con Kit Sistema de Agua PiMag®</p></div>
                         <div class="col"><input type="text" class="form-control" id="step-3-form-comments-four"></div>
-                        <div class="col-auto">= $</div>
+                        <div class="col-auto"><p class="mb-0">= $</p></div>
                         <div class="col-auto"><input type="text" class="form-control" id="step-3-form-comments-five"></div>
                     </div>
 
                     <div class="row gx-2 d-flex align-items-center mb-4">
                         <div class="col-auto"><input type="text" class="form-control" id="step-3-form-comments-six"></div>
-                        <div class="col-auto">venta de Sistemas de Agua PiMag®</div>
+                        <div class="col-auto"><p class="mb-0">venta de Sistemas de Agua PiMag®</p></div>
                         <div class="col"><input type="text" class="form-control" id="step-3-form-comments-seven"></div>
-                        <div class="col-auto">= $</div>
+                        <div class="col-auto"><p class="mb-0">= $</p></div>
                         <div class="col-auto"><input type="text" class="form-control" id="step-3-form-comments-eight"></div>
                     </div>
 
@@ -227,7 +227,7 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col position-relative"><img src="{{ asset('assets/img/general/contacto.png') }}" srcset="{{ asset('assets/img/general/contacto-2x.png') }} 2x" class="position-absolute bottom-0 bg-step" alt="NIKKEN Latinoamérica"></div>
+                <div class="col position-relative"><img src="{{ asset('assets/img/general/contacto.png') }}" srcset="{{ asset('assets/img/general/contacto-2x.png') }} 2x" class="position-absolute bottom-0" alt="NIKKEN Latinoamérica"></div>
 
                 <div class="col-9">
                     <div class="bg-light py-4 pe-5 content border-radius-top-right">
@@ -235,17 +235,17 @@
                         <p class="fw-bold">Tambien es importante que te conectes con tu equipo y aproveches todas las herramientas de entrenamiento.</p>
 
                         <div class="row gx-2 d-flex align-items-center mb-2">
-                            <div class="col-auto">El próximo evento de tu línea ascendente (o patrocinador) será el</div>
+                            <div class="col-auto"><p class="mb-0">El próximo evento de tu línea ascendente (o patrocinador) será el</p></div>
                             <div class="col-auto"><input type="text" class="form-control" id="step-4-form-comments-one"></div>
                         </div>
 
                         <div class="row gx-2 d-flex align-items-center mb-2">
-                            <div class="col-auto">Regístrate al próximo evento Corporativo que será el</div>
+                            <div class="col-auto"><p class="mb-0">Regístrate al próximo evento Corporativo que será el</p></div>
                             <div class="col-auto"><input type="text" class="form-control" id="step-4-form-comments-two"></div>
                         </div>
                     </div>
 
-                    <div class="bg-light py-4 pe-5 content background border-radius-bottom-right">
+                    <div class="bg-light py-4 pe-5 content background border-bottom-right-radius">
                         <h3 class="h2 text-white fw-bold">NIKKEN® Contacto</h3>
                         <p class="text-white"><span class="fw-bold">Descarga el PDF</span> y conoce cómo te apoyamos en la operación de tu negocio NIKKEN® a través de diferentes canales de servicio.</p>
                     </div>
@@ -302,7 +302,7 @@
                 <div class="col"></div>
 
                 <div class="col-11">
-                    <div class="background p-4 border-radius-bottom-left border-radius-top-left">
+                    <div class="background p-4 border-bottom-left-radius border-radius-top-left">
                         <div class="row d-flex align-items-center">
                             <div class="col-auto"><img src="{{ asset('assets/img/general/tienda-virtual.png') }}" srcset="{{ asset('assets/img/general/tienda-virtual-2x.png') }} 2x" class="img-fluid" alt="Tienda Virtual"></div>
 
@@ -361,7 +361,7 @@
                 <img src="{{ asset('assets/img/general/paso-4.png') }}" srcset="{{ asset('assets/img/general/paso-4-2x.png') }} 2x" class="img-fluid position-absolute end-0 top-0" alt="Paso 4">
 
                 <div class="content">
-                    <div class="position-relative p-5 background border-radius-top-right border-radius-bottom-right">
+                    <div class="position-relative p-5 background border-radius-top-right border-bottom-right-radius">
                         <div class="row gx-2 position-absolute sliders">
                             <div class="col"><img src="{{ asset('assets/img/general/logo-seguimiento-perfecto.png') }}" srcset="{{ asset('assets/img/general/logo-seguimiento-perfecto-2x.png') }} 2x" class="img-fluid" alt="Logo Seguimiento Perfecto"></div>
                             <div class="col"><img src="{{ asset('assets/img/general/plan-compensacion.png') }}" srcset="{{ asset('assets/img/general/plan-compensacion-2x.png') }} 2x" class="img-fluid" alt="Plan Compensación"></div>
@@ -445,14 +445,140 @@
             <div class="background mt-5">
                 <div class="row">
                     <div class="col">
-                        hola
+                        <div class="bg-white position-relative p-2 mt-3 content border-radius-top-right border-bottom-right-radius custom z-index-1">
+                            <div class="row d-flex align-items-center">
+                                <div class="col">
+                                    <p><span class="fw-bold">Dirigido:</span> Influencer que están iniciando (Directo, Ejecutivo y Plata).</p>
+                                    <p class="mb-0"><span class="fw-bold">Objetivo:</span>  Capacitar de forma integral a la  comunidad de bienestar sobre todos los temas básicos de NIKKEN®.</p>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="pe-4">
+                                        <img src="{{ asset('assets/img/general/logo-emprendedor.png') }}" srcset="{{ asset('assets/img/general/logo-emprendedor-2x.png') }} 2x" alt="Logo Emprendedor">
+                                        <img src="{{ asset('assets/img/general/logo-seminario-basico.png') }}" srcset="{{ asset('assets/img/general/logo-seminario-basico-2x.png') }} 2x" class="ms-3" alt="Logo Seminario Básico">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white position-relative p-2 mt-3 content border-radius-top-right border-bottom-right-radius custom z-index-1">
+                            <div class="row d-flex align-items-center">
+                                <div class="col">
+                                    <p><span class="fw-bold">Dirigido:</span> Influencer que están iniciando el negocio y desean fortalecer su visión personal desde la filosofía de los 5 pilares de bienestar.</p>
+                                    <p class="mb-0"><span class="fw-bold">Objetivo:</span> Crear la visión y descubrir el propósito de vida basado en los 5 pilares del bienestar de NIKKEN® trabajando en creencias y paradigmas personales.</p>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="pe-4">
+                                        <div class="row gx-2">
+                                            <div class="col position-relative">
+                                                <div class="with">
+                                                    <img src="{{ asset('assets/img/general/logo-emprendedor.png') }}" srcset="{{ asset('assets/img/general/logo-emprendedor-2x.png') }} 2x" alt="Logo Emprendedor">
+                                                    <img src="{{ asset('assets/img/general/logo-empresario.png') }}" srcset="{{ asset('assets/img/general/logo-empresario-2x.png') }} 2x" class="position-absolute end-0 bottom-0" alt="Logo Empresario">
+                                                </div>
+                                            </div>
+
+                                            <div class="col"><img src="{{ asset('assets/img/general/logo-seminario-plata.png') }}" srcset="{{ asset('assets/img/general/logo-seminario-plata-2x.png') }} 2x" class="ms-3" alt="Logo Seminario Plata"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white position-relative p-2 mt-3 content border-radius-top-right border-bottom-right-radius custom z-index-1">
+                            <div class="row d-flex align-items-center">
+                                <div class="col">
+                                    <p><span class="fw-bold">Dirigido:</span> Influencer que hayan tomado Seminario Básico y tienen la intención de fortalecer el negocio desde la visión personal y el fortalecimiento de grupos.</p>
+                                    <p class="mb-0"><span class="fw-bold">Objetivo:</span> Entrenar a los asesores en temas, herramientas y conceptos de emprendimiento y desarrollo que los lleven a impactar a sus grupos.</p>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="pe-4">
+                                        <div class="row gx-2">
+                                            <div class="col position-relative">
+                                                <div class="with">
+                                                    <img src="{{ asset('assets/img/general/logo-emprendedor.png') }}" srcset="{{ asset('assets/img/general/logo-emprendedor-2x.png') }} 2x" alt="Logo Emprendedor">
+                                                    <img src="{{ asset('assets/img/general/logo-empresario.png') }}" srcset="{{ asset('assets/img/general/logo-empresario-2x.png') }} 2x" class="position-absolute end-0 bottom-0" alt="Logo Empresario">
+                                                </div>
+                                            </div>
+
+                                            <div class="col"><img src="{{ asset('assets/img/general/logo-seminario-intermedio.png') }}" srcset="{{ asset('assets/img/general/logo-seminario-intermedio-2x.png') }} 2x" class="py-3 ms-3" alt="Logo Seminario Intermedio"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white position-relative p-2 mt-3 content border-radius-top-right border-bottom-right-radius custom z-index-1">
+                            <div class="row d-flex align-items-center">
+                                <div class="col">
+                                    <p><span class="fw-bold">Dirigido:</span> Influencer que quieran fortalecer habilidades personales, de negocio y de liderazgo.</p>
+                                    <p class="mb-0"><span class="fw-bold">Objetivo:</span> Capacitar a la comunidad de bienestar para apoyarlo en la formación de equipos de alto rendimiento y liderazgo.</p>
+                                </div>
+
+                                <div class="col-auto">
+                                    <div class="pe-4">
+                                        <div class="row gx-2">
+                                            <div class="col position-relative">
+                                                <div class="with">
+                                                    <img src="{{ asset('assets/img/general/logo-emprendedor.png') }}" srcset="{{ asset('assets/img/general/logo-emprendedor-2x.png') }} 2x" alt="Logo Emprendedor">
+                                                    <img src="{{ asset('assets/img/general/logo-empresario.png') }}" srcset="{{ asset('assets/img/general/logo-empresario-2x.png') }} 2x" class="position-absolute end-0 bottom-0" alt="Logo Empresario">
+                                                </div>
+                                            </div>
+
+                                            <div class="col"><img src="{{ asset('assets/img/general/logo-seminario-diamante.png') }}" srcset="{{ asset('assets/img/general/logo-seminario-diamante-2x.png') }} 2x" class="py-2 ms-3" alt="Logo Seminario Diamante"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col"><img src="{{ asset('assets/img/general/universidad-nikken.png') }}" srcset="{{ asset('assets/img/general/universidad-nikken-2x.png') }} 2x" class="img-fluid" alt="Universidad NIKKEN"></div>
+                    <div class="col-auto position-relative"><img src="{{ asset('assets/img/general/universidad-nikken.png') }}" srcset="{{ asset('assets/img/general/universidad-nikken-2x.png') }} 2x" class="position-absolute top-0 end-0" alt="Universidad NIKKEN"></div>
                 </div>
             </div>
         </section>
 
-        <div style="height: 400px;"></div>
+        <section class="step-10">
+            <div class="background mt-5 p-5">
+                <div class="row my-4">
+                    <div class="col"><img src="{{ asset('assets/img/general/ruta-exito.jpg') }}" srcset="{{ asset('assets/img/general/ruta-exito-2x.jpg') }} 2x" class="img-fluid" alt="Éxito"></div>
+
+                    <div class="col">
+                        <div class="title position-relative">
+                            <h2 class="text-white fw-light text-uppercase lh-1">¡Disfruta del <span class="text">y</span> <span class="h1 fw-bold lh-1 d-block">el camino!</span></h2>
+                            <p class="text-white">Recomendaciones de las acciones que hacen los equipos ganadores desde el primer dia:</p>
+
+                            <img src="{{ asset('assets/img/general/logo-exito.png') }}" srcset="{{ asset('assets/img/general/logo-exito-2x.png') }} 2x" class="img-fluid" alt="Éxito">
+                        </div>
+
+                        <ul class="fa-ul text-white mb-0">
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>1. Asegúrate que todos los días alguien se entere de NIKKEN® gracias a ti.</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>2. Añade todos los días a alguien nuevo a tu lista.</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>3. Usa las herramientas para todo.</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>4. Asiste a todos los eventos y hazlo de forma profesional.</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>5. Sal de casa preparado para el éxito.</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>6. Practica todos los días al menos media hora de desarrollo personal. </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>7. Se congruete: promueve bienestar 24hrs al día, es una filosofía de vida.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid bg-dark mt-4">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center py-4">
+                            <img src="{{ asset('assets/img/general/logo-nikken-blanco.png') }}" srcset="{{ asset('assets/img/general/logo-nikken-blanco-2x.png') }} 2x" class="img-fluid mb-2 mt-4" alt="Logo NIKKEN">
+                            <p class="text-white">NIKKEN Latinoamérica 2024. © Todos los derechos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
