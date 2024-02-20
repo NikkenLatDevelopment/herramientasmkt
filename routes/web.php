@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Livewire\FolletoNegocio\Index as FolletoNegocioIndex;
+use App\Livewire\BusinessBrochure\Index AS BusinessBrochureIndex;
 use Illuminate\Support\Facades\Route;
 
 //Folleto de negocio
-Route::get('/folleto-negocio', FolletoNegocioIndex::class)->name('folleto-negocio');
+Route::get('/folleto-negocio', BusinessBrochureIndex::class)->name('business-brochure.index');
 //Folleto de negocio

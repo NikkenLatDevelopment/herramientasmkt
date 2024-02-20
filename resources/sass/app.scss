@@ -1,0 +1,605 @@
+//Visor de imágenes
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
+//Visor de imágenes
+
+//Icons
+@import "@fortawesome/fontawesome-free/css/all.css";
+//Icons
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+//Fonts
+
+$success: #059f39;
+$light: #F3F3F3;
+$secondary: #e4e5e5;
+
+//Typography
+$font-family-sans-serif: 'Roboto', sans-serif;
+$line-height-base: 1.4;
+$font-weight-semibold: 500;
+
+//Input
+$form-floating-height: 3.3rem;
+$input-border-color: #eaeaea;
+$form-select-border-color: #eaeaea;
+$input-focus-border-color: #cccccc;
+$input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
+
+//Navbar
+$navbar-dark-color: white;
+$navbar-dark-hover-color: $success;
+$navbar-dark-active-color: $success;
+
+//Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+//Scroll
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #423F3F;
+}
+
+.form-check-input:checked {
+    background-color: rgba(14,160,57,1);
+    border-color: rgba(14,160,57,1);
+}
+
+.navbar{
+    .navbar-nav{
+        border-radius: 30px;
+        padding: 8px 10px;
+    }
+}
+
+.header{
+    .background{
+        position: absolute;
+        background: rgb(124,178,42);
+        background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
+        width: 95%;
+        border-bottom-left-radius: 130px;
+        z-index: -1;
+    }
+
+    .content{
+        h1{
+            font-size: 73px;
+            line-height: 120%;
+
+            span{
+                font-size: 120px;
+            }
+        }
+    }
+}
+
+.step-1{
+    .border-bottom-right-radius{
+        border-bottom-right-radius: 100px;
+    }
+}
+
+.step-2{
+    .banner{
+        img{
+            position: absolute;
+        }
+    }
+
+    .content{
+        padding-left: 150px;
+        padding-top: 160px;
+    }
+}
+
+.step-3{
+    .background{
+        background: rgb(124,178,42);
+        background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
+    }
+
+    .content{
+        top: -70px;
+
+        .border-bottom-right-radius{
+            border-bottom-right-radius: 50px;
+        }
+
+        .border-radius-top-right{
+            border-top-right-radius: 50px;
+        }
+    }
+
+    ::placeholder {
+        color: rgba(0, 0, 0, 0.346);
+        opacity: 1;
+    }
+
+    ::-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.346);
+    }
+}
+
+.step-4{
+    .step{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .background{
+        background: rgb(124,178,42);
+        background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
+    }
+
+    .content{
+        padding-left: 200px;
+
+        &.border-bottom-right-radius{
+            border-bottom-right-radius: 20px;
+        }
+
+        &.border-radius-top-right{
+            border-top-right-radius: 20px;
+        }
+    }
+
+    .form-control{
+        border-top-left-radius: 17px;
+        border-bottom-left-radius: 17px;
+    }
+}
+
+.step-5{
+    .step{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .background{
+        background: rgb(124,178,42);
+        background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
+    }
+
+    .divider{
+        width: 6px;
+        height: 35px;
+        background: white;
+        border-radius: 15px;
+    }
+
+    .border-bottom-left-radius{
+        border-bottom-left-radius: 200px;
+    }
+
+    .border-radius-top-left{
+        border-top-left-radius: 200px;
+    }
+
+    .content{
+        margin-top: 90px;
+
+        .h1{
+            font-size: 90px;
+            top: -25px;
+        }
+
+        .h2{
+            top: -66px;
+        }
+    }
+}
+
+.step-6{
+    .step{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .sliders{
+        top: 60px;
+    }
+
+    .content{
+        .background{
+            background: rgb(124,178,42);
+            background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
+        }
+
+        .border-bottom-right-radius{
+            border-bottom-right-radius: 100px;
+        }
+
+        .border-radius-top-right{
+            border-top-right-radius: 40px;
+        }
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.487);
+        opacity: 1;
+    }
+
+    ::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.487);;
+    }
+}
+
+.step-8{
+    .content{
+        width: 65%;
+
+        &.border-bottom-right-radius{
+            border-bottom-right-radius: 150px;
+        }
+
+        &.border-radius-top-right{
+            border-top-right-radius: 150px;
+        }
+
+        .with{
+            width: 180px;
+        }
+    }
+}
+
+.step-9{
+    .step{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.step-10{
+    .content{
+        position: absolute;
+        bottom: 50px;
+
+        .text-success{
+            color: #498847 !important;
+        }
+    }
+}
+
+.step-11{
+    margin-top: 150px;
+
+    .background{
+        background: rgb(124,178,42);
+        background: linear-gradient(50deg, rgba(124,178,42,1) 0%, rgba(14,160,57,1) 100%);
+    }
+
+    .title{
+        .h1{
+            font-size: 70px;
+        }
+
+        .text{
+            padding-left: 180px;
+        }
+
+        img{
+            position: absolute;
+            top: -60px;
+            left: 222px;
+            max-width: 177px;
+        }
+    }
+
+    li{
+        background: #ffffff45;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 4px;
+        padding: 2px 7px;
+    }
+}
+
+.fw-extrabold{
+    font-weight: 900;
+}
+
+.custom{
+    &.text-justify{
+        text-align: justify;
+    }
+
+    &.z-index-1{
+        z-index: 1;
+    }
+
+    &.border-bottom-left-radius{
+        border-bottom-left-radius: 60px;
+    }
+}
+
+//XXL applies to x-large devices (large
+@media (max-width: 1399.98px) {
+    .step-2{
+        .banner{
+            img{
+                max-width: 600px;
+            }
+        }
+
+        .content {
+            padding-top: 130px;
+        }
+    }
+
+    .step-10{
+        .content{
+            bottom: -20px;
+        }
+    }
+}
+
+//XL applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .header{
+        .content{
+            h1{
+                font-size: 60px;
+
+                span{
+                    font-size: 100px;
+                }
+            }
+        }
+
+        .banner{
+            img{
+                max-width: 410px;
+            }
+        }
+    }
+
+    .step-2{
+        .banner{
+            img{
+                top: 40px;
+                max-width: 450px;
+            }
+        }
+    }
+
+    .step-4{
+        .content{
+            padding-left: 130px;
+        }
+
+        .banner{
+            max-width: 350px;
+        }
+    }
+
+    .step-8{
+        .content{
+            width: 100%;
+        }
+    }
+
+    .step-10{
+        .content{
+            bottom: -70px;
+        }
+    }
+
+    .step-11{
+        .title{
+            img{
+                left: 214px;
+            }
+        }
+    }
+}
+
+//LG applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .navbar{
+        .navbar-nav{
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+    }
+
+    .header{
+        .background{
+            width: 100%;
+            height: 100%;
+            border-bottom-left-radius: 0;
+        }
+
+        .content{
+            h1{
+                font-size: 50px;
+
+                span{
+                    font-size: 83px;
+                }
+            }
+        }
+
+        .banner{
+            img{
+                max-width: 350px;
+            }
+        }
+    }
+
+    .step-2{
+        .banner{
+            img{
+                position: relative;
+                max-width: 100%;
+                top: 0;
+            }
+        }
+
+        .content {
+            padding-top: 20px;
+            padding-left: 25px;
+        }
+    }
+
+    .step-4{
+        .step{
+            position: relative;
+        }
+
+        .content{
+            padding-left: 30px;
+        }
+    }
+
+    .step-5{
+        .step{
+            position: relative;
+        }
+
+        .border-bottom-left-radius{
+            border-bottom-left-radius: 0;
+        }
+
+        .border-radius-top-left{
+            border-top-left-radius: 0;
+        }
+
+        .background{
+            border-radius: 40px;
+        }
+    }
+
+    .step-6{
+        .step{
+            position: relative;
+        }
+    }
+
+    .step-8{
+        .content{
+            &.border-bottom-right-radius{
+                border-bottom-right-radius: 40px;
+            }
+
+            &.border-radius-top-right{
+                border-top-right-radius: 40px;
+            }
+        }
+    }
+
+    .step-9{
+        .step{
+            position: relative;
+        }
+    }
+
+    .step-10{
+        .content{
+            bottom: -200px;
+        }
+    }
+
+    .step-11{
+        margin-top: 250px;
+
+        .title{
+            img{
+                left: 203px;
+            }
+        }
+    }
+}
+
+//MD applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .step-2{
+        .banner{
+            padding-top: 80px;
+        }
+    }
+
+    .step-10{
+        .content{
+            bottom: -240px;
+
+            .title{
+                max-width: 60%;
+            }
+        }
+    }
+
+    .step-11{
+        margin-top: 300px;
+
+        .title{
+            img{
+                left: 188px;
+            }
+        }
+    }
+}
+
+//SM applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .header{
+        .content{
+            h1{
+                font-size: 12vw;
+
+                span{
+                    font-size: 20vw;
+                }
+            }
+        }
+    }
+
+    .step-5{
+        .content{
+            .h1{
+                top: -17px;
+                font-size: 15vw;
+            }
+        }
+    }
+
+    .step-10{
+        .content{
+            bottom: 50px;
+            position: relative;
+        }
+    }
+
+    .step-11{
+        margin-top: 0;
+
+        .title{
+            .h1{
+                font-size: 14vw;
+            }
+
+            img{
+                left: 182px;
+                max-width: 150px;
+                top: -48px;
+            }
+
+            .text{
+                padding-left: 150px;
+            }
+        }
+    }
+}
