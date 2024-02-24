@@ -20,6 +20,17 @@
         <!-- Estilos -->
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
         <!-- Estilos -->
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2CFE2S8V7"></script>
+
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-P2CFE2S8V7');
+        </script>
     </head>
 
     <body>
