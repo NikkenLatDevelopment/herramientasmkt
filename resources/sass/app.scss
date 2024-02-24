@@ -73,11 +73,11 @@ $navbar-dark-active-color: $success;
 
     .content{
         h1{
-            font-size: 73px;
+            font-size: 90px;
             line-height: 120%;
 
             span{
-                font-size: 120px;
+                font-size: 150px;
             }
         }
     }
@@ -197,6 +197,7 @@ $navbar-dark-active-color: $success;
 
         .h2{
             top: -66px;
+            color: #70706e;
         }
     }
 }
@@ -328,6 +329,24 @@ $navbar-dark-active-color: $success;
 
 //XXL applies to x-large devices (large
 @media (max-width: 1399.98px) {
+    .header{
+        .content{
+            h1{
+                font-size: 78px;
+
+                span{
+                    font-size: 129px;
+                }
+            }
+        }
+
+        .banner{
+            img{
+                max-width: 375px;
+            }
+        }
+    }
+
     .step-2{
         .banner{
             img{
@@ -362,7 +381,7 @@ $navbar-dark-active-color: $success;
 
         .banner{
             img{
-                max-width: 410px;
+                max-width: 360px;
             }
         }
     }
@@ -435,7 +454,7 @@ $navbar-dark-active-color: $success;
 
         .banner{
             img{
-                max-width: 350px;
+                max-width: 250px;
             }
         }
     }
@@ -526,6 +545,18 @@ $navbar-dark-active-color: $success;
 
 //MD applies to small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+    .header{
+        .content{
+            h1{
+                font-size: 72px;
+
+                span{
+                    font-size: 119px;
+                }
+            }
+        }
+    }
+
     .step-2{
         .banner{
             padding-top: 80px;

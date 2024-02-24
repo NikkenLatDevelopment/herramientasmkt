@@ -25,14 +25,13 @@
                         </nav>
 
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12 col-md-7">
                                 <div class="py-4 py-lg-5 ps-lg-5 my-4 my-lg-5 ms-lg-5 content">
                                     <h1 class="text-white fw-light text-uppercase mb-4">Mi folleto de <span class="fw-bold d-block">negocio</span></h1>
-                                    <p class="text-white custom text-justify">¡Felicidades! Por haber elegido ser parte de la comunidad de Bienestar más grande del mundo. En NIKKEN® nos sentimos felices cada vez que <span class="fw-bold">alguien como tú decide iniciar su negocio</span>, gente entregada y entusiasta por mejorar el mundo y por dar a conocer contribuir a mejorar la calidad de vida de más personas.</p>
                                 </div>
                             </div>
 
-                            <div class="col position-relative d-none d-md-block"><div class="banner"><img src="{{ asset('assets/business_brochure/img/general/bienvenida.png') }}" srcset="{{ asset('assets/business_brochure/img/general/bienvenida-2x.png') }} 2x" class="position-absolute bottom-0" alt="Mi Folleto de Negocio"></div></div>
+                            <div class="col-12 col-md-5 position-relative d-none d-md-block"><div class="banner"><img src="{{ asset('assets/business_brochure/img/general/bienvenida.png?1.0.0') }}" srcset="{{ asset('assets/business_brochure/img/general/bienvenida-2x.png?1.0.0') }} 2x" class="position-absolute bottom-0" alt="Mi Folleto de Negocio"></div></div>
                         </div>
                     </div>
                 </div>
@@ -56,13 +55,13 @@
                     <div class="col-12 col-md-6 col-lg-6 col-xl-4">
                         <h2 class="text-success fw-bold text-center mt-4 mb-3 pt-2">¿Quiénes Somos?</h2>
                         <p class="custom text-justify">Somos un movimiento con un enfoque inspirado en la naturaleza que adopta conscientemente soluciones para mejorar el bienestar integral de: <strong>Mente, Cuerpo, Familia, Sociedad y Finanzas</strong>.</p>
-                        <div class="text-center px-5 pt-2"><img src="{{ asset('assets/business_brochure/img/general/quienes-somos.png') }}" srcset="{{ asset('assets/business_brochure/img/general/quienes-somos-2x.png') }} 2x" class="img-fluid" alt="¿Quíenes Somos?"></div>
+                        <div class="text-center px-2 pt-2"><img src="{{ asset('assets/business_brochure/img/general/quienes-somos.png?1.0.0') }}" srcset="{{ asset('assets/business_brochure/img/general/quienes-somos-2x.png?1.0.0') }} 2x" class="img-fluid" alt="¿Quíenes Somos?"></div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-6 col-xl-4">
                         <h2 class="text-success fw-bold text-center mt-4 mb-3 pt-2">Nuestro Objetivo</h2>
                         <p class="custom text-justify">Somos una comunidad que promueve el bienestar financiero, el bienestar físico y la armonía con la naturaleza.</p>
-                        <div class="text-center px-5 pt-2"><img src="{{ asset('assets/business_brochure/img/general/nuestros-objetivos.png') }}" srcset="{{ asset('assets/business_brochure/img/general/nuestros-objetivos-2x.png') }} 2x" class="img-fluid" alt="Nuestros Objetivos"></div>
+                        <div class="text-center px-3 pt-2"><img src="{{ asset('assets/business_brochure/img/general/nuestros-objetivos.png') }}" srcset="{{ asset('assets/business_brochure/img/general/nuestros-objetivos-2x.png') }} 2x" class="img-fluid" alt="Nuestros Objetivos"></div>
                     </div>
 
                     <div class="col-12 col-xl-4">
@@ -79,7 +78,7 @@
                         <div class="text-center pt-2">
                             <div class="d-inline-block mx-2 mx-xxl-3 mb-4"><img src="{{ asset('assets/business_brochure/img/general/logo-aire.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-aire-2x.png') }} 2x" class="img-fluid" alt="Logo Aire"></div>
                             <div class="d-inline-block mx-2 mx-xxl-3 mb-4"><img src="{{ asset('assets/business_brochure/img/general/logo-agua.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-agua-2x.png') }} 2x" class="img-fluid" alt="Logo Agua"></div>
-                            <div class="d-inline-block mx-2 mx-xxl-3 mb-4"><img src="{{ asset('assets/business_brochure/img/general/logo-luz.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-luz-2x.png') }} 2x" class="img-fluid" alt="Logo Luz"></div>
+                            <div class="d-inline-block mx-2 mx-xxl-3 mb-4"><img src="{{ asset('assets/business_brochure/img/general/logo-luz.png?1.0.0') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-luz-2x.png?1.0.0') }} 2x" class="img-fluid" alt="Logo Luz"></div>
                             <div class="d-inline-block mx-2 mx-xxl-3 mb-4"><img src="{{ asset('assets/business_brochure/img/general/logo-descanso.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-descanso-2x.png') }} 2x" class="img-fluid" alt="Logo Descanso"></div>
                             <div class="d-inline-block mx-2 mx-xxl-3 mb-4"><img src="{{ asset('assets/business_brochure/img/general/logo-nutricion.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-nutricion-2x.png') }} 2x" class="img-fluid" alt="Logo Nutrición"></div>
                         </div>
@@ -156,7 +155,7 @@
                             </div>
                         </div>
 
-                        <div class="col-auto"><img src="{{ asset('assets/business_brochure/img/general/logo-pdf-small.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-pdf-small.png') }} 2x" class="img-fluid" alt="Descargar"></div>
+                        <div class="col-auto"><a href="{{ $urlFileOne }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-pdf-small.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-pdf-small.png') }} 2x" class="img-fluid" alt="Descargar"></a></div>
                     </div>
 
                     <p class="fw-bold mb-1">Corto plazo:</p>
@@ -185,8 +184,10 @@
                         <div class="col"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-eight" placeholder="Respuesta:"></div>
                     </div>
 
+                    <p>Para obtener más detalle consulta junto con tu patrocinador el Plan de Compensación, disponible en MyNIKKEN.</p>
+
                     <p class="fw-bold mb-0">Mediano Plazo:</p>
-                    <p class="custom text-justify mb-2">¿Qué ingreso mensual deseas después de tu primer año para sentir que tu tiempo vale la pena?</p>
+                    <p class="custom text-justify mb-2">¿Qué ingreso mensual deseas después de tu primer año para sentir que tu tiempo vale el esfuerzo?</p>
 
                     <div class="form-floating mb-3">
                         <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-nine" style="height: 80px"></textarea>
@@ -215,8 +216,17 @@
             <div class="row gx-2">
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="bg-light rounded-4 position-relative p-2 mb-2">
-                        <a data-fancybox="gallery-1" href="{{ asset('assets/business_brochure/img/pages/pagina-5.jpg') }}">
-                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-5.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 5">
+                        <a data-fancybox="gallery-1" href="{{ asset('assets/business_brochure/img/pages/pagina-7.jpg') }}">
+                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-7.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 5">
+                            <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="bg-light rounded-4 position-relative p-2 mb-2">
+                        <a data-fancybox="gallery-1" href="{{ asset('assets/business_brochure/img/pages/pagina-8.jpg') }}">
+                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-8.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 6">
                             <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
                         </a>
                     </div>
@@ -225,7 +235,7 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="bg-light rounded-4 position-relative p-2 mb-2">
                         <a data-fancybox="gallery-1" href="{{ asset('assets/business_brochure/img/pages/pagina-6.jpg') }}">
-                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-6.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 6">
+                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-6.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 7">
                             <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
                         </a>
                     </div>
@@ -233,17 +243,8 @@
 
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="bg-light rounded-4 position-relative p-2 mb-2">
-                        <a data-fancybox="gallery-1" href="{{ asset('assets/business_brochure/img/pages/pagina-7.jpg') }}">
-                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-7.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 7">
-                            <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-xl-3">
-                    <div class="bg-light rounded-4 position-relative p-2 mb-2">
-                        <a data-fancybox="gallery-1" href="{{ asset('assets/business_brochure/img/pages/pagina-9.jpg') }}">
-                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-9.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 9">
+                        <a data-fancybox="gallery-1" href="{{ asset('assets/business_brochure/img/pages/pagina-10-' . $country . '.jpg') }}">
+                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-10-' . $country . '.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 9">
                             <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
                         </a>
                     </div>
@@ -270,13 +271,10 @@
                         </div>
 
                         <div class="row gx-2 d-flex align-items-center mb-2">
-                            <div class="col-12 col-xl-auto"><p class="mb-1 mb-xxl-0">Regístrate al próximo evento Corporativo que será el</p></div>
+                            <div class="col-12 col-xl-auto"><p class="mb-1 mb-xxl-0">Consulta el próximo evento Corporativo</p></div>
 
                             <div class="col-auto">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="step-4-form-comments-two" aria-describedby="icon-step-4-form-comments-two" placeholder="dd/mm/yyyy">
-                                    <span class="input-group-text bg-light" id="icon-step-4-form-comments-two"><i class="fa-solid fa-calendar text-success"></i></span>
-                                </div>
+                                <a href="{{ $urlPlatformThree }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-agenda.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-agenda-2x.png') }} 2x" class="img-fluid" alt="BeNIKKEN Agenda"></a>
                             </div>
                         </div>
                     </div>
@@ -298,20 +296,11 @@
                 <p class="text-center">Toma en cuenta estos sencillos para comenzar tu Negocio NIKKEN®</p>
             </div>
 
-            <div class="row gx-2 mt-5">
-                <div class="col-12 col-md-6 col-xl-3">
-                    <div class="bg-light rounded-4 position-relative p-2 mb-2">
-                        <a data-fancybox="gallery-2" href="{{ asset('assets/business_brochure/img/pages/pagina-10.jpg') }}">
-                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-10.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 10">
-                            <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
-                        </a>
-                    </div>
-                </div>
-
+            <div class="row gx-2 d-flex justify-content-center mt-5">
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="bg-light rounded-4 position-relative p-2 mb-2">
                         <a data-fancybox="gallery-2" href="{{ asset('assets/business_brochure/img/pages/pagina-11.jpg') }}">
-                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-11.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 11">
+                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-11.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 10">
                             <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
                         </a>
                     </div>
@@ -320,16 +309,27 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="bg-light rounded-4 position-relative p-2 mb-2">
                         <a data-fancybox="gallery-2" href="{{ asset('assets/business_brochure/img/pages/pagina-12.jpg') }}">
-                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-12.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 12">
+                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-12.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 11">
                             <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
                         </a>
                     </div>
                 </div>
 
+                @if (in_array($country, [1, 2, 5, 6 , 7, 8]))
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="bg-light rounded-4 position-relative p-2 mb-2">
+                            <a data-fancybox="gallery-2" href="{{ asset('assets/business_brochure/img/pages/pagina-13-' . $country .'.jpg') }}">
+                                <img src="{{ asset('assets/business_brochure/img/pages/pagina-13-' . $country .'.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 12">
+                                <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                @endif
+
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="bg-light rounded-4 position-relative p-2 mb-2">
-                        <a data-fancybox="gallery-2" href="{{ asset('assets/business_brochure/img/pages/pagina-13.jpg') }}">
-                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-13.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 13">
+                        <a data-fancybox="gallery-2" href="{{ asset('assets/business_brochure/img/pages/pagina-14-' . $country . '.jpg') }}">
+                            <img src="{{ asset('assets/business_brochure/img/pages/pagina-14-' . $country . '.jpg') }}" class="img-fluid rounded-4" alt="Folleto de Negocio Página 13">
                             <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
                         </a>
                     </div>
@@ -346,18 +346,20 @@
 
                             <div class="col position-relative">
                                 <div class="content ms-3">
-                                    <div class="h2 text-secondary fw-normal text-uppercase position-absolute">Dale inicio a tu</div>
+                                    <div class="h2 fw-normal text-uppercase position-absolute">Dale inicio a tu</div>
                                     <div class="h1 text-white fw-bold text-uppercase position-absolute">Negocio</div>
 
-                                    <p class="text-white">Como Influencer de Bienestar, tienes el beneficio de contar con una <span class="fw-bold">Tienda Virtual Personalizada</span>, la cual la podrás compartir con tus clientes para seguir generando ventas y llegar a más personas.</p>
+                                    <p class="text-white">Como Socio Independiente NIKKEN®, tienes el beneficio de contar con una <span class="fw-bold">Tienda Virtual Personalizada</span>, la cual la podrás compartir con tus clientes para seguir generando ventas y llegar a más personas.</p>
 
                                     <div class="row">
                                         <div class="col-12 col-xl-auto">
                                             <h3 class="text-white fw-bold">Descarga la App</h3>
 
                                             <div class="d-flex mt-2 mb-3 mb-xl-0">
-                                                <img src="{{ asset('assets/business_brochure/img/general/logo-google-play.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-google-play-2x.png') }} 2x" class="img-fluid me-2" alt="Logo Google Play">
-                                                <img src="{{ asset('assets/business_brochure/img/general/logo-app-store.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-app-store-2x.png') }} 2x" class="img-fluid" alt="Logo App Store">
+                                                <a href="{{ $urlPlatformFour }}" target="_blank" class="text-decoration-none">
+                                                    <img src="{{ asset('assets/business_brochure/img/general/logo-google-play.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-google-play-2x.png') }} 2x" class="img-fluid me-2" alt="Logo Google Play">
+                                                    <img src="{{ asset('assets/business_brochure/img/general/logo-app-store.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-app-store-2x.png') }} 2x" class="img-fluid" alt="Logo App Store">
+                                                </a>
                                             </div>
                                         </div>
 
@@ -369,16 +371,16 @@
 
                                                 <div class="col-12 col-sm col-xl-12 col-xxl">
                                                     <div class="d-flex">
-                                                        <img src="{{ asset('assets/business_brochure/img/general/logo-facebook.png') }}" class="img-fluid me-2" alt="Logo Facebook">
-                                                        <img src="{{ asset('assets/business_brochure/img/general/logo-instagram.png') }}" class="img-fluid me-2" alt="Logo Instagram">
-                                                        <img src="{{ asset('assets/business_brochure/img/general/logo-youtube.png') }}" class="img-fluid me-2" alt="Logo Youtube">
-                                                        <img src="{{ asset('assets/business_brochure/img/general/logo-spotify.png') }}" class="img-fluid me-2" alt="Logo Spotify">
-                                                        <img src="{{ asset('assets/business_brochure/img/general/logo-tiktok.png') }}" class="img-fluid" alt="Logo TikTok">
+                                                        <a href="{{ $urlSocialTwo }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-facebook.png') }}" class="img-fluid me-2" alt="Logo Facebook"></a>
+                                                        <a href="{{ $urlSocialOne }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-instagram.png') }}" class="img-fluid me-2" alt="Logo Instagram"></a>
+                                                        <a href="{{ $urlSocialThree }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-youtube.png') }}" class="img-fluid me-2" alt="Logo Youtube"></a>
+                                                        <a href="{{ $urlSocialFour }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-spotify.png') }}" class="img-fluid me-2" alt="Logo Spotify"></a>
+                                                        <a href="{{ $urlSocialFive }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-tiktok.png') }}" class="img-fluid" alt="Logo TikTok"></a>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <p class="text-white text-center mt-2">www.nikkenlatam.com</p>
+                                            <p class="text-white text-center mt-2"><a href="{{ $urlPlatformFive }}" target="_blank" class="text-white">www.nikkenlatam.com</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -400,10 +402,10 @@
                 <p class="text-center mb-0">Es generar una plataforma donde se pueden crear negocios que promueven un buen producto. Cada uno de estos 4 ejes te brindan de manera segmentada la información necesaria para obtener el mayor provecho y las mayores ganancias enfocado en tu momento de carrera.</p>
 
                 <div class="row gx-2 position-relative sliders">
-                    <div class="col-12 col-md-6 col-xl-3"><div class="text-center"><img src="{{ asset('assets/business_brochure/img/general/tarjeta-plan-compensacion.png') }}" srcset="{{ asset('assets/business_brochure/img/general/tarjeta-plan-compensacion-2x.png') }} 2x" class="img-fluid mb-2" alt="Plan de Compensación"></div></div>
-                    <div class="col-12 col-md-6 col-xl-3"><div class="text-center"><img src="{{ asset('assets/business_brochure/img/general/tarjeta-seguimiento-perfecto.png') }}" srcset="{{ asset('assets/business_brochure/img/general/tarjeta-seguimiento-perfecto-2x.png') }} 2x" class="img-fluid mb-2" alt="Seguimiento Perfecto"></div></div>
-                    <div class="col-12 col-md-6 col-xl-3"><div class="text-center"><img src="{{ asset('assets/business_brochure/img/general/tarjeta-programas-especiales.png') }}" srcset="{{ asset('assets/business_brochure/img/general/tarjeta-programas-especiales-2x.png') }} 2x" class="img-fluid mb-2" alt="Programas Especiales"></div></div>
-                    <div class="col-12 col-md-6 col-xl-3"><div class="text-center"><img src="{{ asset('assets/business_brochure/img/general/tarjeta-universidad-nikken.png') }}" srcset="{{ asset('assets/business_brochure/img/general/tarjeta-universidad-nikken-2x.png') }} 2x" class="img-fluid mb-2" alt="Universidad NIKKEN"></div></div>
+                    <div class="col-12 col-md-6 col-xl-3"><div class="text-center"><a href="{{ $urlFileTwo }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/tarjeta-plan-compensacion.png') }}" srcset="{{ asset('assets/business_brochure/img/general/tarjeta-plan-compensacion-2x.png') }} 2x" class="img-fluid mb-2" alt="Plan de Compensación"></a></div></div>
+                    <div class="col-12 col-md-6 col-xl-3"><div class="text-center"><a href="{{ $urlPlatformOne }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/tarjeta-seguimiento-perfecto.png') }}" srcset="{{ asset('assets/business_brochure/img/general/tarjeta-seguimiento-perfecto-2x.png') }} 2x" class="img-fluid mb-2" alt="Seguimiento Perfecto"></a></div></div>
+                    <div class="col-12 col-md-6 col-xl-3"><div class="text-center"><a href="{{ $urlPlatformTwo }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/tarjeta-programas-especiales.png') }}" srcset="{{ asset('assets/business_brochure/img/general/tarjeta-programas-especiales-2x.png') }} 2x" class="img-fluid mb-2" alt="Programas Especiales"></a></div></div>
+                    <div class="col-12 col-md-6 col-xl-3"><div class="text-center"><a href="#universidad-nikken"><img src="{{ asset('assets/business_brochure/img/general/tarjeta-universidad-nikken.png') }}" srcset="{{ asset('assets/business_brochure/img/general/tarjeta-universidad-nikken-2x.png') }} 2x" class="img-fluid mb-2" alt="Universidad NIKKEN"></a></div></div>
                 </div>
 
                 <div class="content">
@@ -447,7 +449,7 @@
                                 </div>
 
                                 <div class="row d-flex align-items-center mb-2">
-                                    <div class="col-12 col-md-auto"><p class="text-white mb-2 mb-md-0">Nuevos Influencers con Kit Sistema de Agua</p></div>
+                                    <div class="col-12 col-md-auto"><p class="text-white mb-2 mb-md-0">Nuevos Socios con Kit Sistema de Agua</p></div>
                                     <div class="col-12 col-md"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-five" placeholder="Respuesta:"></div>
                                 </div>
 
@@ -465,7 +467,7 @@
                                 </div>
                             </div>
 
-                            <div class="col"><img src="{{ asset('assets/business_brochure/img/general/logo-pdf-blanco.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-pdf-blanco-2x.png') }} 2x" class="img-fluid" alt="Logo PDF"></div>
+                            <div class="col"><a href="{{ $urlFileThree }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-pdf-blanco.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-pdf-blanco-2x.png') }} 2x" class="img-fluid" alt="Logo PDF"></a></div>
                         </div>
                     </div>
                 </div>
@@ -473,7 +475,22 @@
         </section>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 pt-3">
+        <section>
+            <h2 class="text-success fw-bold text-center pt-3 pb-4 mb-4">Siembra un Cliente para toda la vida con los Sistemas de Agua NIKKEN®:</h2>
+
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-sm-6 order-2 order-sm-1">
+                    <p class="custom text-justify">Al acompañar y conectar con tus Clientes puedes entender mejor sus necesidades y preferencias, esto dará lugar a mayores ventas y una recomendación boca a boca positiva.</p>
+                    <p><span class="fw-bold">UBi es tu mejor aliado para la administración y asesoría de tus Clientes.</span> UBi te ayudará a construir relaciones a largo plazo, que representan nuevas oportunidades, crecimiento y éxito.</p>
+                </div>
+
+                <div class="col-12 col-sm-6 order-1 order-sm-2 text-center"><a href="{{ $urlPlatformSix }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-ubi.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-ubi-2x.png') }} 2x" class="img-fluid mb-5 mb-sm-0" alt="Logo UBI"></a></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container mt-5" id="universidad-nikken">
         <section class="step-7">
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-sm">
@@ -569,8 +586,16 @@
                 <div class="text-end"><img src="{{ asset('assets/business_brochure/img/general/paso-5.png') }}" srcset="{{ asset('assets/business_brochure/img/general/paso-5-2x.png') }} 2x" class="img-fluid step" alt="Paso 4"></div>
 
                 <h2 class="text-success fw-bold text-center pt-3 mb-5">Bienestar Social (Pilar Físico)</h2>
-                <p class="text-center">En NIKKEN® nos inspiramos en la sabiduría de la naturaleza, aprendiendo de sus fuentes de energía vital, adoptando conscientemente soluciones para mejorar el bienestar integral de Mente, Cuerpo, Familia, Sociedad y Finanzas.</p>
-                <p class="text-center mb-0"><span class="fw-bold">Una Vida en Balance</span>. Creando tecnologias innovadoras que aportan armonía a nuestro cuerpo y lograr los siguientes beneficios:</p>
+
+                <div class="row d-flex align-items-center mb-5">
+                    <div class="col-12 col-sm-6 order-2 order-sm-1">
+                        <p class="custom text-justify">A través de nuestros innovadores productos inspirados en las energías de la naturaleza y a través de un sistema de comercialización potenciador, proveemos el Bienestar Social con recursos para mejorar su vida convencional y redescubrir el poder revitalizante de la naturaleza, liberando su potencial para una vida próspera y llena de propósitos.</p>
+                    </div>
+
+                    <div class="col-12 col-sm-6 order-1 order-sm-2 text-center"><a href="{{ $urlPlatformSeven }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-nikken-experience.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-nikken-experience-2x.png') }} 2x" class="img-fluid mb-5 mb-sm-0" alt="Logo UBI"></a></div>
+                </div>
+
+                <p class="text-center mb-4">En NIKKEN® nos inspiramos en la sabiduría de la naturaleza, aprendiendo de sus fuentes de energía vital, adoptando conscientemente soluciones para mejorar el bienestar integral de Mente, Cuerpo, Familia, Sociedad y Finanzas. <span class="fw-bold">Una Vida en Balance</span>. Creando tecnologias innovadoras que aportan armonía a nuestro cuerpo y lograr los siguientes beneficios:</p>
             </div>
 
             <div class="row gx-0 d-flex justify-content-center flex-wrap text-center mt-4">
@@ -631,14 +656,11 @@
         <section class="step-11">
             <div class="background rounded-5 px-4 px-sm-5 pt-5 pb-4">
                 <div class="row my-4">
-
-
-
                     <div class="col-12 col-xl-6 order-2 order-xl-1">
                         <div class="text-center mt-4 mt-xl-0">
                             <div class="bg-light rounded-4 position-relative p-2 mb-2">
-                                <a data-fancybox="gallery-3" href="{{ asset('assets/business_brochure/img/general/ruta-exito.png') }}">
-                                    <img src="{{ asset('assets/business_brochure/img/general/ruta-exito.png') }}" class="img-fluid rounded-4" alt="Rutal del Éxito">
+                                <a data-fancybox="gallery-3" href="{{ asset('assets/business_brochure/img/general/ruta-exito.jpg') }}">
+                                    <img src="{{ asset('assets/business_brochure/img/general/ruta-exito.jpg') }}" class="img-fluid rounded-4" alt="Rutal del Éxito">
                                     <div class="bg-dark bg-opacity-25 rounded-4 d-flex align-items-center justify-content-center position-absolute top-0 start-0 end-0 bottom-0 p-2"><i class="fa-solid fa-eye text-white"></i></div>
                                 </a>
                             </div>
@@ -648,7 +670,7 @@
                     <div class="col-12 col-xl-6 order-1 order-xl-2">
                         <div class="title position-relative">
                             <h2 class="text-white fw-light text-uppercase lh-1">¡Disfruta del <span class="text">y</span> <span class="h1 fw-bold lh-1 d-block">el camino!</span></h2>
-                            <p class="text-white">Recomendaciones de las acciones que hacen los equipos ganadores desde el primer dia:</p>
+                            <p class="text-white">ACCIONES RECOMENDADAS QUE REALIZAN LOS EQUIPOS GANADORES DESDE EL PRIMER DIA:</p>
 
                             <img src="{{ asset('assets/business_brochure/img/general/exito.png') }}" srcset="{{ asset('assets/business_brochure/img/general/exito-2x.png') }} 2x" class="img-fluid" alt="Éxito">
                         </div>
@@ -659,8 +681,8 @@
                             <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>3. Usa las herramientas para todo.</li>
                             <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>4. Asiste a todos los eventos y hazlo de forma profesional.</li>
                             <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>5. Sal de casa preparado para el éxito.</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>6. Practica todos los días al menos media hora de desarrollo personal. </li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>7. Se congruete: promueve bienestar 24hrs al día, es una filosofía de vida.</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>6. Práctica todos los días 30 minutos o más de desarrollo personal. </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>7. Se congruente: promueve bienestar 24hrs al día, es una filosofía de vida.</li>
                         </ul>
                     </div>
                 </div>
