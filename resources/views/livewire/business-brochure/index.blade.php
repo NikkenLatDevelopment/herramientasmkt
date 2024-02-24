@@ -256,7 +256,7 @@
 
                 <div class="col-12 col-lg-9">
                     <div class="bg-light py-4 pe-4 pe-lg-5 content border-radius-top-right">
-                        <h3 class="h2 text-success fw-bold mb-1 mt-2">Contacta con tu equipo!</h3>
+                        <h3 class="h2 text-success fw-bold mb-1 mt-2">Contacta con tu equipo</h3>
                         <p class="fw-bold">Tambien es importante que te conectes con tu equipo y aproveches todas las herramientas de entrenamiento.</p>
 
                         <div class="row gx-2 d-flex align-items-center mb-2">
