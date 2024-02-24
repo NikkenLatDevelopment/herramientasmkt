@@ -63,6 +63,46 @@ return [
             ]) : [],
         ],
 
+        'mysql_NIKKEN' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL_NIKKEN'),
+            'host' => env('DB_HOST_NIKKEN', '127.0.0.1'),
+            'port' => env('DB_PORT_NIKKEN', '3306'),
+            'database' => env('DB_DATABASE_NIKKEN', 'forge'),
+            'username' => env('DB_USERNAME_NIKKEN', 'forge'),
+            'password' => env('DB_PASSWORD_NIKKEN', ''),
+            'unix_socket' => env('DB_SOCKET_NIKKEN', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA_NIKKEN'),
+            ]) : [],
+        ],
+
+        'mysql_PANEL' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL_PANEL'),
+            'host' => env('DB_HOST_PANEL', '127.0.0.1'),
+            'port' => env('DB_PORT_PANEL', '3306'),
+            'database' => env('DB_DATABASE_PANEL', 'forge'),
+            'username' => env('DB_USERNAME_PANEL', 'forge'),
+            'password' => env('DB_PASSWORD_PANEL', ''),
+            'unix_socket' => env('DB_SOCKET_PANEL', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA_PANEL'),
+            ]) : [],
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),

@@ -109,7 +109,7 @@
                             <p class="custom text-justify">Se lo mas detallado posible. <span class="fw-bold">Mientras más claro lo tengas, más poderoso será tu motivo</span>.</p>
 
                             <div class="form-floating">
-                                <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-2-form-comments" style="height: 120px"></textarea>
+                                <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-2-form-comments" wire:model.live.debounce.3000ms="formData.data_1" style="height: 120px"></textarea>
                                 <label for="step-2-form-comments" class="small opacity-50">Escribe tu respueta aquí...</label>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                 <p class="text-white custom text-justify">¿Cuál es el objetivo de bienestar que te gustaría lograr tanto en ti como en tu familia? Comenta con tu patrocinador que productos te ayudarían a lograrlo y escríbelo.</p>
 
                 <div class="form-floating pb-5 mb-4 mb-md-2 mt-3">
-                    <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-one" style="height: 100px"></textarea>
+                    <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-one" wire:model.live.debounce.3000ms="formData.data_2" style="height: 100px"></textarea>
                     <label for="step-3-form-comments-one" class="small opacity-50">Escribe tu respueta aquí...</label>
                 </div>
             </div>
@@ -162,26 +162,26 @@
                     <p class="custom text-justify mb-2">¿Cuál es tu urgencia a resolver? Ejemplo: pagar la renta, la colegiatura, pagar un tratamiento, pagar la mensualidad de un auto, ayudar a tus padres, ahorrar para un viaje. ¿Cuánto dinero adicional requieres al mes para lograrlo?</p>
 
                     <div class="form-floating mb-3">
-                        <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-two" style="height: 80px"></textarea>
+                        <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-two" wire:model.live.debounce.3000ms="formData.data_3" style="height: 80px"></textarea>
                         <label for="step-3-form-comments-two" class="small opacity-50">Escribe tu respueta aquí...</label>
                     </div>
 
                     <p class="custom text-justify">Revisa junto con tu patrocinador o Líder ascendente, que acciones debes realizar para que eso ocurra:</p>
 
                     <div class="row d-flex align-items-end mb-4">
-                        <div class="col-12 col-sm-2 col-md-4 col-xl-auto"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-three" placeholder="Respuesta:"></div>
+                        <div class="col-12 col-sm-2 col-md-4 col-xl-auto"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-three" wire:model.live.debounce.3000ms="formData.data_4" placeholder="Respuesta:"></div>
                         <div class="col-12 col-sm-10 col-md-8 col-lg-auto"><p class="my-1 my-sm-0">nuevos inscritos con Kit Sistema de Agua PiMag®</p></div>
-                        <div class="col-12 col-sm-2 col-md-4 col-xl"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-3-form-comments-four" placeholder="Respuesta:"></div>
+                        <div class="col-12 col-sm-2 col-md-4 col-xl"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-3-form-comments-four" wire:model.live.debounce.3000ms="formData.data_5" placeholder="Respuesta:"></div>
                         <div class="col-auto"><p class="my-2 my-sm-0">= $</p></div>
-                        <div class="col"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-five" placeholder="Respuesta:"></div>
+                        <div class="col"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-five" wire:model.live.debounce.3000ms="formData.data_6" placeholder="Respuesta:"></div>
                     </div>
 
                     <div class="row d-flex align-items-end mb-4">
-                        <div class="col-12 col-sm-2 col-md-4 col-xl-auto"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-six" placeholder="Respuesta:"></div>
+                        <div class="col-12 col-sm-2 col-md-4 col-xl-auto"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-six" wire:model.live.debounce.3000ms="formData.data_7" placeholder="Respuesta:"></div>
                         <div class="col-12 col-sm-10 col-md-8 col-lg-auto"><p class="my-1 my-sm-0">venta de Sistemas de Agua PiMag®</p></div>
-                        <div class="col-12 col-sm-2 col-md-4 col-xl"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-3-form-comments-seven" placeholder="Respuesta:"></div>
+                        <div class="col-12 col-sm-2 col-md-4 col-xl"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-3-form-comments-seven" wire:model.live.debounce.3000ms="formData.data_8" placeholder="Respuesta:"></div>
                         <div class="col-auto"><p class="my-2 my-sm-0">= $</p></div>
-                        <div class="col"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-eight" placeholder="Respuesta:"></div>
+                        <div class="col"><input type="text" class="form-control bg-transparent border-bottom border-dark border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0" id="step-3-form-comments-eight" wire:model.live.debounce.3000ms="formData.data_9" placeholder="Respuesta:"></div>
                     </div>
 
                     <p>Para obtener más detalle consulta junto con tu patrocinador el Plan de Compensación, disponible en MyNIKKEN.</p>
@@ -190,7 +190,7 @@
                     <p class="custom text-justify mb-2">¿Qué ingreso mensual deseas después de tu primer año para sentir que tu tiempo vale el esfuerzo?</p>
 
                     <div class="form-floating mb-3">
-                        <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-nine" style="height: 80px"></textarea>
+                        <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-nine" wire:model.live.debounce.3000ms="formData.data_10" style="height: 80px"></textarea>
                         <label for="step-3-form-comments-nine" class="small opacity-50">Escribe tu respueta aquí...</label>
                     </div>
 
@@ -198,7 +198,7 @@
                     <p class="custom text-justify mb-2">¿Qué ingreso necesitas en 5 años para cumplir tus sueños?</p>
 
                     <div class="form-floating">
-                        <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-ten" style="height: 80px"></textarea>
+                        <textarea class="form-control rounded-4" placeholder="Escribe tu respueta aquí..." id="step-3-form-comments-ten" wire:model.live.debounce.3000ms="formData.data_11" style="height: 80px"></textarea>
                         <label for="step-3-form-comments-ten" class="small opacity-50">Escribe tu respueta aquí...</label>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
 
                             <div class="col-auto">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" id="step-4-form-comments-one" aria-describedby="icon-step-4-form-comments-one" placeholder="dd/mm/yyyy">
+                                    <input type="text" class="form-control" id="step-4-form-comments-one" aria-describedby="icon-step-4-form-comments-one" wire:model.live.debounce.3000ms="formData.data_12" placeholder="dd/mm/yyyy">
                                     <span class="input-group-text bg-light" id="icon-step-4-form-comments-one"><i class="fa-solid fa-calendar text-success"></i></span>
                                 </div>
                             </div>
@@ -423,17 +423,17 @@
 
                             <div class="col-12 col-lg">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="step-6-form-one" value="0">
+                                    <input class="form-check-input" type="radio" name="step-6-form" id="step-6-form-one" value="Corto Plazo" wire:model.live.debounce.3000ms="formData.data_13">
                                     <label class="form-check-label text-white" for="step-6-form-one">Corto Plazo</label>
                                 </div>
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="step-6-form-two" value="1">
+                                    <input class="form-check-input" type="radio" name="step-6-form" id="step-6-form-two" value="Media Plazo" wire:model.live.debounce.3000ms="formData.data_13">
                                     <label class="form-check-label text-white" for="step-6-form-two">Media Plazo</label>
                                 </div>
 
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="step-6-form-three" value="2">
+                                    <input class="form-check-input" type="radio" name="step-6-form" id="step-6-form-three" value="Largo Plazo" wire:model.live.debounce.3000ms="formData.data_13">
                                     <label class="form-check-label text-white" for="step-6-form-three">Largo Plazo</label>
                                 </div>
                             </div>
@@ -445,25 +445,25 @@
                             <div class="col-12 col-md-10 col-lg-8">
                                 <div class="row d-flex align-items-center mb-2">
                                     <div class="col-12 col-md-auto"><p class="text-white mb-2 mb-md-0">Venta personal (VP)</p></div>
-                                    <div class="col-12 col-md"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-four" placeholder="Respuesta:"></div>
+                                    <div class="col-12 col-md"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-four" wire:model.live.debounce.3000ms="formData.data_14" placeholder="Respuesta:"></div>
                                 </div>
 
                                 <div class="row d-flex align-items-center mb-2">
                                     <div class="col-12 col-md-auto"><p class="text-white mb-2 mb-md-0">Nuevos Socios con Kit Sistema de Agua</p></div>
-                                    <div class="col-12 col-md"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-five" placeholder="Respuesta:"></div>
+                                    <div class="col-12 col-md"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-five" wire:model.live.debounce.3000ms="formData.data_15" placeholder="Respuesta:"></div>
                                 </div>
 
                                 <div class="row d-flex align-items-center mb-2">
                                     <div class="col-12 col-md-auto"><p class="text-white mb-2 mb-md-0">Rango a calificar para este ingreso</p></div>
-                                    <div class="col-12 col-md"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-six" placeholder="Respuesta:"></div>
+                                    <div class="col-12 col-md"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-six" wire:model.live.debounce.3000ms="formData.data_16" placeholder="Respuesta:"></div>
                                 </div>
 
                                 <div class="row gx-2 d-flex align-items-center mb-4 mb-md-0">
                                     <div class="col-12 col-md-auto"><p class="text-white mb-2 mb-md-0">Requerimientos para el rango:</p></div>
                                     <div class="col-auto"><p class="text-white mb-0">VP</p></div>
-                                    <div class="col"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-seven" placeholder="Respuesta:"></div>
+                                    <div class="col"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-seven" wire:model.live.debounce.3000ms="formData.data_17" placeholder="Respuesta:"></div>
                                     <div class="col-auto"><p class="text-white mb-0">VGP</p></div>
-                                    <div class="col"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-eight" placeholder="Respuesta:"></div>
+                                    <div class="col"><input type="text" class="form-control text-white bg-transparent border-bottom border-white border-start-0 border-top-0 border-end-0 rounded-0 shadow-none px-0 my-1 my-sm-0" id="step-6-form-eight" wire:model.live.debounce.3000ms="formData.data_18" placeholder="Respuesta:"></div>
                                 </div>
                             </div>
 
