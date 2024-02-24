@@ -260,7 +260,7 @@
                         <p class="fw-bold">Tambien es importante que te conectes con tu equipo y aproveches todas las herramientas de entrenamiento.</p>
 
                         <div class="row gx-2 d-flex align-items-center mb-2">
-                            <div class="col-12 col-xxl-auto"><p class="mb-2 mb-xxl-0">El próximo evento de tu línea ascendente (o patrocinador) será el</p></div>
+                            <div class="col-12 col-xl-auto"><p class="mb-1 mb-xxl-0">El próximo evento de tu línea ascendente (o patrocinador) será el</p></div>
 
                             <div class="col-auto">
                                 <div class="input-group">
