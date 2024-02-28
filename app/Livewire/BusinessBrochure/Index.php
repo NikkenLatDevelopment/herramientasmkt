@@ -19,6 +19,7 @@ class Index extends Component
     public $urlFileOne;
     public $urlFileTwo;
     public $urlFileThree;
+    public $urlFileFour;
     public $urlPlatformOne;
     public $urlPlatformTwo;
     public $urlPlatformThree;
@@ -80,9 +81,10 @@ class Index extends Component
             $this->urlSocialThree = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|YouTube|" . base64_encode("https://www.youtube.com/user/nikkenlatinoamerica"));
             $this->urlSocialFour = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|Spotify|" . base64_encode("https://open.spotify.com/show/3keIHGLxGoA9x6w4Swx1cU?si=b83935a943814e58"));
             $this->urlSocialFive = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|TikTok|" . base64_encode("https://www.tiktok.com/@nikkenlatinoamerica"));
-            $this->urlFileOne = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|Objetivo de Bienestar - Financiero|" . base64_encode("https://storage.googleapis.com/vivenikken/sitios/regional/folleto-negocios/archivos/objetivo-bienestar-financiero.pdf"));
-            $this->urlFileTwo = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|Plan de Compensación|" . base64_encode("https://storage.googleapis.com/vivenikken/sitios/regional/folleto-negocios/archivos/plan-compensacion.pdf"));
-            $this->urlFileThree = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|Planifica tus Ganancias|" . base64_encode("https://storage.googleapis.com/vivenikken/sitios/regional/folleto-negocios/archivos/planifica-ganancias.pdf"));
+            $this->urlFileOne = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|Objetivo de Bienestar - Financiero|" . base64_encode("https://storage.googleapis.com/vivenikken/sitios/regional/folleto-negocio/archivos/dale-un-motivo-a-tu-negocio.pdf"));
+            $this->urlFileTwo = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|Plan de Compensación|" . base64_encode("https://storage.googleapis.com/vivenikken/sitios/regional/folleto-negocio/archivos/plan-compensacion.pdf"));
+            $this->urlFileThree = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|Planifica tus Ganancias|" . base64_encode("https://storage.googleapis.com/vivenikken/sitios/regional/folleto-negocio/archivos/planifica-ganancias.pdf"));
+            $this->urlFileFour = 'https://nikkenlatam.com/platform/?' . base64_encode("15|$this->code|Folleto de Negocio|NIKKEN Contacto|" . base64_encode("https://storage.googleapis.com/vivenikken/sitios/regional/folleto-negocio/archivos/NIKKEN-Contacto-" . $this->country . ".pdf"));
             //Inicializar información
         } catch (\Exception $e) {
             //Redireccionar

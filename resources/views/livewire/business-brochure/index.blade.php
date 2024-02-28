@@ -263,9 +263,9 @@
                             <div class="col-12 col-xl-auto"><p class="mb-1 mb-xxl-0">El próximo evento de tu línea ascendente (o patrocinador) será el</p></div>
 
                             <div class="col-auto">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="step-4-form-comments-one" aria-describedby="icon-step-4-form-comments-one" wire:model.live.debounce.3000ms="formData.data_12" placeholder="dd/mm/yyyy">
-                                    <span class="input-group-text bg-light" id="icon-step-4-form-comments-one"><i class="fa-solid fa-calendar text-success"></i></span>
+                                <div class="input-group my-2 my-xxl-0">
+                                    <input type="text" class="form-control datePicker" id="step-4-form-comments-one" aria-describedby="icon-step-4-form-comments-one" wire:model.live="formData.data_12" placeholder="dd/mm/yyyy" autocomplete="off">
+                                    <span class="input-group-text bg-success" id="icon-step-4-form-comments-one"><i class="fa-solid fa-calendar text-white"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -280,8 +280,16 @@
                     </div>
 
                     <div class="bg-light py-4 pe-5 content background border-bottom-right-radius">
-                        <h3 class="h2 text-white fw-bold">NIKKEN® Contacto</h3>
-                        <p class="text-white"><span class="fw-bold">Descarga el PDF</span> y conoce cómo te apoyamos en la operación de tu negocio NIKKEN® a través de diferentes canales de servicio.</p>
+                        <div class="row">
+                            <div class="col-12 col-sm">
+                                <h3 class="h2 text-white fw-bold">NIKKEN® Contacto</h3>
+                                <p class="text-white"><span class="fw-bold">Descarga el PDF</span> y conoce cómo te apoyamos en la operación de tu negocio NIKKEN® a través de diferentes canales de servicio.</p>
+                            </div>
+
+                            <div class="col-12 col-sm-auto">
+                                <a href="{{ $urlFileFour }}" target="_blank"><img src="{{ asset('assets/business_brochure/img/general/logo-pdf-blanco.png') }}" srcset="{{ asset('assets/business_brochure/img/general/logo-pdf-blanco-2x.png') }} 2x" class="img-fluid" alt="Logo PDF"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -315,7 +323,7 @@
                     </div>
                 </div>
 
-                @if (in_array($country, [1, 2, 5, 6 , 7, 8]))
+                @if (in_array($country, [1, 2, 6 , 7]))
                     <div class="col-12 col-md-6 col-xl-3">
                         <div class="bg-light rounded-4 position-relative p-2 mb-2">
                             <a data-fancybox="gallery-2" href="{{ asset('assets/business_brochure/img/pages/pagina-13-' . $country .'.jpg') }}">
@@ -710,6 +718,28 @@
             Fancybox.bind('[data-fancybox="gallery-1"]', {});
             Fancybox.bind('[data-fancybox="gallery-2"]', {});
             Fancybox.bind('[data-fancybox="gallery-3"]', {});
+        </script>
+
+        <script>
+            //DatePicker
+            function initDatePicker() {
+                $('.datePicker').datepicker({
+                    autoclose: true,
+                    todayHighlight: true,
+                    format: "yyyy-mm-dd",
+                    language: 'es'
+                }).on('change', function(){
+                    var name = $(this).attr("wire:model.live");
+                    var value = $(this).val();
+
+                    @this.set(name, value)
+                });
+            }
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+                //Inicializar DatePicker
+                initDatePicker();
+            });
         </script>
     @endpush
 </div>

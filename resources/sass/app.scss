@@ -309,6 +309,87 @@ $navbar-dark-active-color: $success;
     }
 }
 
+//Datepicker
+.datepicker {
+    padding: 0.7rem !important;
+    border: 0.07rem solid $gray-200;
+
+    td, th {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    table tr td.active.active, table tr td.active.disabled, table tr td.active.disabled.active, table tr td.active.disabled.disabled, table tr td.active.disabled:active, table tr td.active.disabled:hover, table tr td.active.disabled:hover.active, table tr td.active.disabled:hover.disabled, table tr td.active.disabled:hover:active, table tr td.active.disabled:hover:hover, table tr td .active.disabled:hover[disabled], table tr td .active.disabled[disabled], table tr td .active:active, table tr td .active:hover, table tr td .active:hover.active, table tr td .active:hover.disabled, table tr td .active:hover:active, table tr td .active:hover:hover, table tr td .active:hover[disabled], table tr td .active[disabled], table tr td span.active.active, table tr td span.active.disabled, table tr td span.active.disabled.active, table tr td span.active.disabled.disabled, table tr td span.active.disabled:active, table tr td span.active.disabled:hover, table tr td span.active.disabled:hover.active, table tr td span.active.disabled:hover.disabled, table tr td span.active.disabled:hover:active, table tr td span.active.disabled:hover:hover, table tr td span.active.disabled:hover[disabled], table tr td span.active.disabled[disabled], table tr td span.active:active, table tr td span.active:hover, table tr td span.active:hover.active, table tr td span.active:hover.disabled, table tr td span.active:hover:active, table tr td span.active:hover:hover, table tr td span.active:hover[disabled], table tr td span.active[disabled] {
+        background-color: $success !important;
+        background-image: none !important;
+        color: white !important;
+    }
+
+    table tr td.today, table tr td.today.disabled, table tr td.today.disabled:hover, table tr td.today:hover {
+        background-color: #f4f3ef !important;
+        background-image: none !important;
+        color: #000 !important;
+    }
+
+    table tr td.day.focused, table tr td.day:hover, table tr td span.focused, table tr td span:hover {
+        background: $light;
+    }
+
+    table tr td span.new, table tr td span.old {
+        color: white;
+    }
+
+    .datepicker-switch:hover, .next:hover, .prev:hover, tfoot tr th:hover {
+        background: $light;
+    }
+
+    .datepicker-switch:hover {
+        background: none;
+    }
+
+    .datepicker-inline {
+        border: 0.15rem solid $gray-200;
+        width: 17.15rem;
+    }
+
+    .datepicker-dropdown:after {
+        border-bottom: 0.45rem solid white;
+    }
+
+    .datepicker-dropdown:before {
+        border-bottom-color: $gray-200;
+    }
+
+    .datepicker-dropdown.datepicker-orient-top:before {
+        border-top: 0.5rem solid $gray-200;
+    }
+
+    .datepicker-dropdown.datepicker-orient-top:after {
+        border-top: 0.45rem solid white;
+    }
+
+    table tr td.today.active, table tr td.today.disabled, table tr td.today.disabled.active, table tr td.today.disabled.disabled, table tr td.today.disabled:active, table tr td.today.disabled:hover, table tr td.today.disabled:hover.active, table tr td.today.disabled:hover.disabled, table tr td.today.disabled:hover:active, table tr td.today.disabled:hover:hover, table tr td.today.disabled:hover[disabled], table tr td.today.disabled[disabled], table tr td.today:active, table tr td.today:hover, table tr td.today:hover.active, table tr td.today:hover.disabled, table tr td.today:hover:active, table tr td.today:hover:hover, table tr td.today:hover[disabled], table tr td.today[disabled] {
+        background-color: $success;
+        color: white;
+    }
+
+    table tr td.active.active, table tr td.active.disabled, table tr td.active.disabled.active, table tr td.active.disabled.disabled, table tr td.active.disabled:active, table tr td.active.disabled:hover, table tr td.active.disabled:hover.active, table tr td.active.disabled:hover.disabled, table tr td.active.disabled:hover:active, table tr td.active.disabled:hover:hover, table tr td.active.disabled:hover[disabled], table tr td.active.disabled[disabled], table tr td.active:active, table tr td.active:hover, table tr td.active:hover.active, table tr td.active:hover.disabled, table tr td.active:hover:active, table tr td.active:hover:hover, table tr td.active:hover[disabled], table tr td.active[disabled] {
+        background: $body-bg;
+    }
+
+    table tr td.day.focused, table tr td.day:hover, table tr td span.focused, table tr td span:hover {
+        background: $body-bg;
+    }
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+    left: 15px;
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+    left: 14px;
+}
+
 .fw-extrabold{
     font-weight: 900;
 }
