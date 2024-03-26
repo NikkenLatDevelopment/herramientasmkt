@@ -20,5 +20,5 @@ yarn-error.log
 
 composer.json
 composer.lock
-*.DS_Store
+**/.DS_Store
 ._*
