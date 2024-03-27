@@ -15,16 +15,16 @@ class Index extends Component
 
     public int $tab = 0;
 
-    #[Validate('required', message: 'La fecha es obligatorio.')]
+    #[Validate('required')]
     public string $date;
 
-    #[Validate('required', message: 'El código es obligatorio.')]
+    #[Validate('required')]
     public string $code;
 
-    #[Validate('required', message: 'El país es obligatorio.')]
+    #[Validate('required')]
     public int $country;
 
-    #[Validate('required', message: 'La ciudad es obligatoria.')]
+    #[Validate('required')]
     public string $city;
 
     #[Validate('required|image')]
