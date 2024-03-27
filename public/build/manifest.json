@@ -32,13 +32,26 @@
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
   },
   "resources/js/business-brochure.js": {
-    "file": "assets/business-brochure-D1m0eQOG.js",
+    "file": "assets/business-brochure-0oVGw_2D.js",
     "src": "resources/js/business-brochure.js",
+    "isEntry": true,
+    "imports": [
+      "resources/js/financial-coffee.js"
+    ]
+  },
+  "resources/js/financial-coffee.js": {
+    "file": "assets/financial-coffee-DXnaBwfE.js",
+    "src": "resources/js/financial-coffee.js",
     "isEntry": true
   },
   "resources/sass/business-brochure.scss": {
     "file": "assets/business-brochure-HATqNa4P.css",
     "src": "resources/sass/business-brochure.scss",
+    "isEntry": true
+  },
+  "resources/sass/financial-coffee.scss": {
+    "file": "assets/financial-coffee-BAXTYm7I.css",
+    "src": "resources/sass/financial-coffee.scss",
     "isEntry": true
   }
 }
