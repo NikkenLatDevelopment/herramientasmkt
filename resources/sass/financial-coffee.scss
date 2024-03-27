@@ -1,0 +1,146 @@
+//Icons
+@import "@fortawesome/fontawesome-free/css/all.css";
+//Icons
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+//Fonts
+
+$success: #214b8c;
+$light: #F3F3F3;
+$secondary: #e4e5e5;
+
+//Typography
+$font-family-sans-serif: 'Roboto', sans-serif;
+$line-height-base: 1.4;
+$font-weight-semibold: 500;
+
+//Input
+$form-floating-height: 3.3rem;
+$input-border-color: #eaeaea;
+$form-select-border-color: #eaeaea;
+$input-focus-border-color: #cccccc;
+$input-focus-box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
+
+//Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+//Scroll
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #423F3F;
+}
+
+body{
+    background-image: url('http://localhost/assets/financial_coffee/img/general/bg.png');
+    background-size: 26%;
+}
+
+.form-floating > .form-select {
+    padding-top: 1.425rem;
+    padding-bottom: 0.225rem;
+}
+
+.form-select:focus {
+    box-shadow: 0 0 0 0.15rem rgb(34 34 34 / 11%);
+}
+
+.content{
+    max-width: 490px;
+
+    .custom{
+        &.text-justify{
+            text-align: justify;
+        }
+    }
+}
+
+.datepicker {
+    padding: 0.7rem !important;
+    border: 0.07rem solid $gray-200;
+    border-radius: 15px;
+
+    td, th {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    table tr td.active.active, table tr td.active.disabled, table tr td.active.disabled.active, table tr td.active.disabled.disabled, table tr td.active.disabled:active, table tr td.active.disabled:hover, table tr td.active.disabled:hover.active, table tr td.active.disabled:hover.disabled, table tr td.active.disabled:hover:active, table tr td.active.disabled:hover:hover, table tr td .active.disabled:hover[disabled], table tr td .active.disabled[disabled], table tr td .active:active, table tr td .active:hover, table tr td .active:hover.active, table tr td .active:hover.disabled, table tr td .active:hover:active, table tr td .active:hover:hover, table tr td .active:hover[disabled], table tr td .active[disabled], table tr td span.active.active, table tr td span.active.disabled, table tr td span.active.disabled.active, table tr td span.active.disabled.disabled, table tr td span.active.disabled:active, table tr td span.active.disabled:hover, table tr td span.active.disabled:hover.active, table tr td span.active.disabled:hover.disabled, table tr td span.active.disabled:hover:active, table tr td span.active.disabled:hover:hover, table tr td span.active.disabled:hover[disabled], table tr td span.active.disabled[disabled], table tr td span.active:active, table tr td span.active:hover, table tr td span.active:hover.active, table tr td span.active:hover.disabled, table tr td span.active:hover:active, table tr td span.active:hover:hover, table tr td span.active:hover[disabled], table tr td span.active[disabled] {
+        background-color: $success !important;
+        background-image: none !important;
+        color: white !important;
+    }
+
+    table tr td.today, table tr td.today.disabled, table tr td.today.disabled:hover, table tr td.today:hover {
+        background-color: #f4f3ef !important;
+        background-image: none !important;
+        color: #000 !important;
+    }
+
+    table tr td.day.focused, table tr td.day:hover, table tr td span.focused, table tr td span:hover {
+        background: $light;
+    }
+
+    table tr td span.new, table tr td span.old {
+        color: white;
+    }
+
+    .datepicker-switch:hover, .next:hover, .prev:hover, tfoot tr th:hover {
+        background: $light;
+    }
+
+    .datepicker-switch:hover {
+        background: none;
+    }
+
+    .datepicker-inline {
+        border: 0.15rem solid $gray-200;
+        width: 17.15rem;
+    }
+
+    .datepicker-dropdown:after {
+        border-bottom: 0.45rem solid white;
+    }
+
+    .datepicker-dropdown:before {
+        border-bottom-color: $gray-200;
+    }
+
+    .datepicker-dropdown.datepicker-orient-top:before {
+        border-top: 0.5rem solid $gray-200;
+    }
+
+    .datepicker-dropdown.datepicker-orient-top:after {
+        border-top: 0.45rem solid white;
+    }
+
+    table tr td.today.active, table tr td.today.disabled, table tr td.today.disabled.active, table tr td.today.disabled.disabled, table tr td.today.disabled:active, table tr td.today.disabled:hover, table tr td.today.disabled:hover.active, table tr td.today.disabled:hover.disabled, table tr td.today.disabled:hover:active, table tr td.today.disabled:hover:hover, table tr td.today.disabled:hover[disabled], table tr td.today.disabled[disabled], table tr td.today:active, table tr td.today:hover, table tr td.today:hover.active, table tr td.today:hover.disabled, table tr td.today:hover:active, table tr td.today:hover:hover, table tr td.today:hover[disabled], table tr td.today[disabled] {
+        background-color: $success;
+        color: white;
+    }
+
+    table tr td.active.active, table tr td.active.disabled, table tr td.active.disabled.active, table tr td.active.disabled.disabled, table tr td.active.disabled:active, table tr td.active.disabled:hover, table tr td.active.disabled:hover.active, table tr td.active.disabled:hover.disabled, table tr td.active.disabled:hover:active, table tr td.active.disabled:hover:hover, table tr td.active.disabled:hover[disabled], table tr td.active.disabled[disabled], table tr td.active:active, table tr td.active:hover, table tr td.active:hover.active, table tr td.active:hover.disabled, table tr td.active:hover:active, table tr td.active:hover:hover, table tr td.active:hover[disabled], table tr td.active[disabled] {
+        background: $body-bg;
+    }
+
+    table tr td.day.focused, table tr td.day:hover, table tr td span.focused, table tr td span:hover {
+        background: $body-bg;
+    }
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+    left: 15px;
+}
+
+.datepicker-dropdown.datepicker-orient-left:before {
+    left: 14px;
+}
