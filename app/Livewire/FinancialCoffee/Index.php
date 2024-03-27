@@ -4,6 +4,7 @@ namespace App\Livewire\FinancialCoffee;
 
 use Livewire\Component;
 use App\Models\Distributor;
+use Illuminate\Support\Carbon;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\DB;
 use Google\Cloud\Storage\StorageClient;
@@ -72,14 +73,25 @@ class Index extends Component
         $bucket = $storage->bucket('vivenikken');
         //Definir bucket
 
+        //Ruta imagen
+        $photo = 'sites/regional/cafecito-financiero/images/' . $this->code . '.' . $this->photo->getClientOriginalExtension();
+        //Ruta imagen
+
         //Subir imagen
-        $object = $bucket->upload(file_get_contents($this->photo->getRealPath()), [ 'name' => 'sites/regional/cafecito-financiero/images/' . $this->code . '.' . $this->photo->getClientOriginalExtension() ]);
+        $object = $bucket->upload(file_get_contents($this->photo->getRealPath()), [ 'name' => $photo ]);
         //Subir imagen
+
+        // Cambiar tab
+        $this->tab = 1;
 
         if($object) {
             //Guardar datos
             DB::connection('sqlsrv_SQL')->table('Associates_CafecitoAbril')->insert([
-                'Associateid' => $this->code
+                'Associateid' => $this->code,
+                'Event' => Carbon::createFromFormat('d-m-Y', $this->date)->format('Y-m-d'),
+                'City' => $this->city,
+                'Photo' => 'https://storage.googleapis.com/vivenikken/' . $photo,
+                'CREATED' => now()
             ]);
 
             //Cambiar tab
