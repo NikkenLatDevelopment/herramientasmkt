@@ -94,24 +94,14 @@
                                             @endphp
 
                                             @foreach ($table as $item)
-                                                @if (trim($item->Tipo_sistema) != 'Compra')
-                                                    @php
-                                                        $totalIncorporation += $item->Qty;
-                                                    @endphp
-                                                @else
-                                                    @php
-                                                        $totalSale += $item->Qty;
-                                                    @endphp
-                                                @endif
-                                            @endforeach
-
-                                            @foreach ($bonus as $item)
                                                 @if (trim($item->tipo) != 'Compra')
                                                     @php
+                                                        $totalIncorporation += $item->No_Unidades;
                                                         $bonusIncorporation += $item->Total_Amount;
                                                     @endphp
                                                 @else
                                                     @php
+                                                        $totalSale += $item->No_Unidades;
                                                         $bonusSale += $item->Total_Amount;
                                                     @endphp
                                                 @endif
