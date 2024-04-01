@@ -33,6 +33,7 @@ class Index extends Component
     public $photo;
 
     public array $table = [];
+    public array $bonus = [];
 
     public function render()
     {
@@ -75,6 +76,10 @@ class Index extends Component
                 //Consultar datos etapa 2
                 $this->table = DB::connection('sqlsrv_SQL_PIMK')->table('Detail_Sperfect')->where('Owner', $this->code)->get()->toArray();
                 //Consultar datos etapa 2
+
+                //Consultar bonos
+                $this->bonus = DB::connection('sqlsrv_SQL_PIMK')->select("SELECT * from Bonos_cafe_marzo(?)", [$this->code]);
+                //Consultar bonos
             }
 
             //Validar si ya está registrado
@@ -87,7 +92,7 @@ class Index extends Component
                 //Cambiar tab
             }
 
-        } catch (\Exception $e) {
+        } catch (\Exception) {
             //Redireccionar
             return redirect()->to('https://mi.nikkenlatam.com/home');
             //Redireccionar

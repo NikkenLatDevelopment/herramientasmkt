@@ -88,7 +88,9 @@
                                         @if (count($table) > 0)
                                             @php
                                             $totalIncorporation = 0;
+                                            $bonusIncorporation = 0;
                                             $totalSale = 0;
+                                            $bonusSale = 0;
                                             @endphp
 
                                             @foreach ($table as $item)
@@ -103,12 +105,24 @@
                                                 @endif
                                             @endforeach
 
+                                            @foreach ($bonus as $item)
+                                                @if (trim($item->tipo) != 'Compra')
+                                                    @php
+                                                        $bonusIncorporation += $item->No_Unidades;
+                                                    @endphp
+                                                @else
+                                                    @php
+                                                        $bonusSale += $item->No_Unidades;
+                                                    @endphp
+                                                @endif
+                                            @endforeach
+
                                             <div class="table-responsive mt-3">
                                                 <table class="table table-hover table-striped table-bordered table-sm mb-0">
                                                     <thead class="text-white bg-success">
                                                         <tr>
                                                             <th scope="col"></th>
-                                                            <th scope="col" class="small fw-semibold">Cantidad de Unidades</th>
+                                                            <th scope="col" class="small fw-semibold">Cant. Unidades</th>
                                                             <th scope="col" class="small fw-semibold">Bonos</th>
                                                         </tr>
                                                     </thead>
@@ -117,13 +131,13 @@
                                                         <tr>
                                                             <td class="small fw-semibold">Incorporación</td>
                                                             <td>{{ $totalIncorporation }}</td>
-                                                            <td></td>
+                                                            <td>{{ $bonusIncorporation }}</td>
                                                         </tr>
 
                                                         <tr>
                                                             <td class="small fw-semibold">Compra</td>
                                                             <td>{{ $totalSale }}</td>
-                                                            <td></td>
+                                                            <td>{{ $bonusSale }}</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
