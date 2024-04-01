@@ -78,9 +78,58 @@
                                 </div>
 
                                 <div class="tab-pane fade @if ($tab == 1) show active @endif" id="step1-tab-pane" role="tabpanel" aria-labelledby="step1-tab" tabindex="0">
-                                    <div class="h1 mb-2"><i class="fa-solid fa-mug-hot text-success"></i></div>
-                                    <div class="h5 text-success fw-bold mb-3">La información se ha almacenado correctamente.</div>
-                                    <div class="h6 fw-normal">Gracias por participar.</div>
+                                    @if ($stage == 1)
+                                    <div class="h5 fw-bold">¡Felicidades por exponer tu negocio y registrar tu evento!</div>
+                                        <p class="mb-0">Quedaste registrado/a para participar por un producto NIKKEN en el KicKoff Paso a paso de tu país.</p>
+                                    @else
+                                        <div class="h5 fw-bold">¡Felicidades por exponer tu negocio y registrar tu evento!</div>
+                                        <p class="mb-0">Quedaste registrado/a gana bonos de Seguimiento perfecto por incorporación con kit sistema de agua desde la primera unidad y por compras desde la segunda unidad.</p>
+
+                                        @if (count($table) > 0)
+                                            @php
+                                            $totalIncorporation = 0;
+                                            $totalSale = 0;
+                                            @endphp
+
+                                            @foreach ($table as $item)
+                                                @if (trim($item->Tipo_sistema) != 'Compra')
+                                                    @php
+                                                        $totalIncorporation += $item->Qty;
+                                                    @endphp
+                                                @else
+                                                    @php
+                                                        $totalSale += $item->Qty;
+                                                    @endphp
+                                                @endif
+                                            @endforeach
+
+                                            <div class="table-responsive mt-3">
+                                                <table class="table table-hover table-striped table-bordered table-sm mb-0">
+                                                    <thead class="text-white bg-success">
+                                                        <tr>
+                                                            <th scope="col"></th>
+                                                            <th scope="col" class="fw-semibold">Cantidad de Unidades</th>
+                                                            <th scope="col" class="fw-semibold">Bonos</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="fw-semibold">Incorporación</td>
+                                                            <td>{{ $totalIncorporation }}</td>
+                                                            <td></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="fw-semibold">Compra</td>
+                                                            <td>{{ $totalSale }}</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        @endif
+                                    @endif
                                 </div>
                             </div>
                         </div>

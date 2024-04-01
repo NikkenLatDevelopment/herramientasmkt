@@ -15,6 +15,7 @@ class Index extends Component
     use WithFileUploads;
 
     public int $tab = 0;
+    public int $stage = 2;
 
     #[Validate('required')]
     public string $date;
@@ -31,6 +32,8 @@ class Index extends Component
     #[Validate('required|image')]
     public $photo;
 
+    public array $table = [];
+
     public function render()
     {
         //Mostrar vista
@@ -41,7 +44,8 @@ class Index extends Component
     public function mount(string $code) {
         try {
             //Obtener código sin encriptar
-            $this->code = base64_decode($code);
+            // $this->code = base64_decode($code);
+            $this->code = $code;
             //Obtener código sin encriptar
 
             //Consultar información de usuario
@@ -53,6 +57,31 @@ class Index extends Component
                 return redirect()->to('https://mi.nikkenlatam.com/home');
                 //Redireccionar
             }
+
+            //Validar etapa 1
+            $stage = DB::connection('sqlsrv_SQL_RS')->table('Etapa1_Seguimiento_Perfect')->where('associateid', $this->code)->first();
+            //Validar etapa 1
+
+            if($stage) {
+                //Cambiar etapa
+                $this->stage = 1;
+                //Cambiar etapa
+            }else{
+                //Consultar datos etapa 2
+                $this->table = DB::connection('sqlsrv_SQL_PIMK')->table('Detail_Sperfect')->where('Owner', $this->code)->get()->toArray();
+                //Consultar datos etapa 2
+            }
+
+            //Validar si ya está registrado
+            $exists = DB::connection('sqlsrv_SQL')->table('Associates_CafecitoAbril')->where('Associateid', $this->code)->first();
+            //Validar si ya está registrado
+
+            if($exists) {
+                //Cambiar tab
+                $this->tab = 1;
+                //Cambiar tab
+            }
+
         } catch (\Exception $e) {
             //Redireccionar
             return redirect()->to('https://mi.nikkenlatam.com/home');
@@ -81,18 +110,29 @@ class Index extends Component
         $object = $bucket->upload(file_get_contents($this->photo->getRealPath()), [ 'name' => $photo ]);
         //Subir imagen
 
-        // Cambiar tab
-        $this->tab = 1;
-
         if($object) {
-            //Guardar datos
-            DB::connection('sqlsrv_SQL')->table('Associates_CafecitoAbril')->insert([
-                'Associateid' => $this->code,
-                'Event' => Carbon::createFromFormat('d-m-Y', $this->date)->format('Y-m-d'),
-                'City' => $this->city,
-                'Photo' => 'https://storage.googleapis.com/vivenikken/' . $photo,
-                'CREATED' => now()
-            ]);
+            //Validar si ya está registrado
+            $exists = DB::connection('sqlsrv_SQL')->table('Associates_CafecitoAbril')->where('Associateid', $this->code)->first();
+            //Validar si ya está registrado
+
+            if($exists) {
+                //Actualizar datos
+                DB::connection('sqlsrv_SQL')->table('Associates_CafecitoAbril')->where('Associateid', $this->code)->update([
+                    'Event' => Carbon::createFromFormat('d-m-Y', $this->date)->format('Y-m-d'),
+                    'City' => $this->city,
+                    'Photo' => 'https://storage.googleapis.com/vivenikken/' . $photo,
+                    'CREATED' => now()
+                ]);
+            } else {
+                //Guardar datos
+                DB::connection('sqlsrv_SQL')->table('Associates_CafecitoAbril')->insert([
+                    'Associateid' => $this->code,
+                    'Event' => Carbon::createFromFormat('d-m-Y', $this->date)->format('Y-m-d'),
+                    'City' => $this->city,
+                    'Photo' => 'https://storage.googleapis.com/vivenikken/' . $photo,
+                    'CREATED' => now()
+                ]);
+            }
 
             //Cambiar tab
             $this->tab = 1;

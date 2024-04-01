@@ -148,6 +148,35 @@ return [
             'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'true'),
         ],
 
+        'sqlsrv_SQL_RS' => [
+            'driver' => 'sqlsrv',
+            'url' => env('DATABASE_URL_SQL_RS'),
+            'host' => env('DB_HOST_SQL_RS', 'localhost'),
+            'port' => env('DB_PORT_SQL_RS', '1433'),
+            'database' => env('DB_DATABASE_SQL_RS', 'forge'),
+            'username' => env('DB_USERNAME_SQL_RS', 'forge'),
+            'password' => env('DB_PASSWORD_SQL_RS', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
+            'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'true'),
+        ],
+
+        'sqlsrv_SQL_PIMK' => [
+            'driver' => 'sqlsrv',
+            'url' => env('DATABASE_URL_SQL_PIMK'),
+            'host' => env('DB_HOST_SQL_PIMK', 'localhost'),
+            'port' => env('DB_PORT_SQL_PIMK', '1433'),
+            'database' => env('DB_DATABASE_SQL_PIMK', 'forge'),
+            'username' => env('DB_USERNAME_SQL_PIMK', 'forge'),
+            'password' => env('DB_PASSWORD_SQL_PIMK', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
+            'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'true'),
+        ]
     ],
 
     /*
