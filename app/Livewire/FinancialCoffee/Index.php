@@ -41,12 +41,17 @@ class Index extends Component
         //Mostrar vista
     }
 
-    public function mount(string $code) {
+    public function mount(string $code, string $type = null) {
         try {
-            //Obtener código sin encriptar
-            // $this->code = base64_decode($code);
-            $this->code = $code;
-            //Obtener código sin encriptar
+            if($type && $type == 'STAFF') {
+                //Obtener código sin encriptar
+                $this->code = $code;
+                //Obtener código sin encriptar
+            }else{
+                //Obtener código sin encriptar
+                $this->code = base64_decode($code);
+                //Obtener código sin encriptar
+            }
 
             //Consultar información de usuario
             $distributor = Distributor::where('codigo', $this->code)->where('tipo', 'CI')->where('estatus', 1)->first();

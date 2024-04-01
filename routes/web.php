@@ -9,5 +9,5 @@ Route::get('/folleto-negocio/{code}', BusinessBrochureIndex::class)->name('busin
 //Folleto de negocio
 
 //Cafecito financiero
-Route::get('/cafecito-financiero/{code}', FinancialCoffeeIndex::class)->name('financial-coffee.index');
+Route::get('/cafecito-financiero/{code}/{type?}', FinancialCoffeeIndex::class)->name('financial-coffee.index');
 //Cafecito financiero
