@@ -108,11 +108,11 @@
                                             @foreach ($bonus as $item)
                                                 @if (trim($item->tipo) != 'Compra')
                                                     @php
-                                                        $bonusIncorporation += $item->No_Unidades;
+                                                        $bonusIncorporation += $item->Total_Amount;
                                                     @endphp
                                                 @else
                                                     @php
-                                                        $bonusSale += $item->No_Unidades;
+                                                        $bonusSale += $item->Total_Amount;
                                                     @endphp
                                                 @endif
                                             @endforeach
@@ -131,13 +131,13 @@
                                                         <tr>
                                                             <td class="small fw-semibold">Incorporación</td>
                                                             <td>{{ $totalIncorporation }}</td>
-                                                            <td>{{ $bonusIncorporation }}</td>
+                                                            <td>{{ number_format($bonusIncorporation, 2) }}</td>
                                                         </tr>
 
                                                         <tr>
                                                             <td class="small fw-semibold">Compra</td>
                                                             <td>{{ $totalSale }}</td>
-                                                            <td>{{ $bonusSale }}</td>
+                                                            <td>{{ number_format($bonusSale, 2) }}</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
