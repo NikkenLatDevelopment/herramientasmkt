@@ -77,12 +77,12 @@
                                     </form>
                                 </div>
 
-                                <div class="tab-pane fade @if ($tab == 1) show active @endif" id="step1-tab-pane" role="tabpanel" aria-labelledby="step1-tab" tabindex="0">
+                                <div class="tab-pane fade p-2 @if ($tab == 1) show active @endif" id="step1-tab-pane" role="tabpanel" aria-labelledby="step1-tab" tabindex="0">
                                     @if ($stage == 1)
-                                    <div class="h5 fw-bold">¡Felicidades por exponer tu negocio y registrar tu evento!</div>
+                                        <div class="h5 fw-bold text-success">¡Felicidades por exponer tu negocio y registrar tu evento!</div>
                                         <p class="mb-0">Quedaste registrado/a para participar por un producto NIKKEN en el KicKoff Paso a paso de tu país.</p>
                                     @else
-                                        <div class="h5 fw-bold">¡Felicidades por exponer tu negocio y registrar tu evento!</div>
+                                        <div class="h5 fw-bold text-success">¡Felicidades por exponer tu negocio y registrar tu evento!</div>
                                         <p class="mb-0">Quedaste registrado/a gana bonos de Seguimiento perfecto por incorporación con kit sistema de agua desde la primera unidad y por compras desde la segunda unidad.</p>
 
                                         @if (count($table) > 0)
