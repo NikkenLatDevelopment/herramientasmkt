@@ -108,8 +108,8 @@
                                                     <thead class="text-white bg-success">
                                                         <tr>
                                                             <th scope="col"></th>
-                                                            <th scope="col" class="fw-semibold">Cantidad de Unidades</th>
-                                                            <th scope="col" class="fw-semibold">Bonos</th>
+                                                            <th scope="col" class="small fw-semibold">Cantidad de Unidades</th>
+                                                            <th scope="col" class="small fw-semibold">Bonos</th>
                                                         </tr>
                                                     </thead>
 
