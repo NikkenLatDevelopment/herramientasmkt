@@ -115,13 +115,13 @@
 
                                                     <tbody>
                                                         <tr>
-                                                            <td class="fw-semibold">Incorporación</td>
+                                                            <td class="small fw-semibold">Incorporación</td>
                                                             <td>{{ $totalIncorporation }}</td>
                                                             <td></td>
                                                         </tr>
 
                                                         <tr>
-                                                            <td class="fw-semibold">Compra</td>
+                                                            <td class="small fw-semibold">Compra</td>
                                                             <td>{{ $totalSale }}</td>
                                                             <td></td>
                                                         </tr>
