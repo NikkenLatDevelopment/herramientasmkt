@@ -83,9 +83,10 @@
                                         <p class="mb-0">Quedaste registrado/a para participar por un producto NIKKEN en el KicKoff Paso a paso de tu país.</p>
                                     @else
                                         <div class="h5 fw-bold text-success">¡Felicidades por exponer tu negocio y registrar tu evento!</div>
-                                        <p class="mb-0">Quedaste registrado/a gana bonos de Seguimiento perfecto por incorporación con kit sistema de agua desde la primera unidad y por compras desde la segunda unidad.</p>
+                                        <p class="mb-0">Quedaste registrado/a gana bonos de Seguimiento perfecto.</p>
+                                        {{-- <p class="mb-0">Quedaste registrado/a gana bonos de Seguimiento perfecto por incorporación con kit sistema de agua desde la primera unidad y por compras desde la segunda unidad.</p> --}}
 
-                                        @if (count($table) > 0)
+                                        {{-- @if (count($table) > 0)
                                             @php
                                             $totalIncorporation = 0;
                                             $bonusIncorporation = 0;
@@ -132,7 +133,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        @endif
+                                        @endif --}}
                                     @endif
                                 </div>
                             </div>

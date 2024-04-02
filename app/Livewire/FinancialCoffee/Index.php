@@ -73,7 +73,7 @@ class Index extends Component
                 //Cambiar etapa
             }else{
                 //Consultar bonos y unidades
-                $this->table = DB::connection('sqlsrv_SQL_PIMK')->select("SELECT * from Bonos_cafe_marzo(?)", [$this->code]);
+                // $this->table = DB::connection('sqlsrv_SQL_PIMK')->select("SELECT * from Bonos_cafe_marzo(?)", [$this->code]);
                 //Consultar bonos y unidades
             }
 
