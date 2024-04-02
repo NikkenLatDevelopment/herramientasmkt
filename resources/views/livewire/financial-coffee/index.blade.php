@@ -74,6 +74,7 @@
 
                                         <hr class="text-secondary">
                                         <button type="submit" wire:target="photo" wire:loading.attr="disabled" class="btn btn-success rounded-4 py-3 w-100">Participar <i class="fa-solid fa-floppy-disk ms-1"></i> <span wire:loading  wire:target="photo"><div class="spinner-border spinner-border-sm ms-1" role="status"><span class="visually-hidden">Loading...</span></div></span></button>
+                                        <div class="mt-2"><a href="https://storage.googleapis.com/vivenikken/sites/regional/cafecito-financiero/terms/terminos-condiciones.pdf?<?php echo date('Ymdhms') ?>" target="_blank" class="small text-muted opacity-50">Términos y Condiciones</a></div>
                                     </form>
                                 </div>
 
