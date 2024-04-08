@@ -32,7 +32,7 @@ class Test extends Component
     public function render()
     {
         //Mostrar vista
-        return view('livewire.financial-coffee.test');
+        return view('livewire.financial-coffee.test')->extends('layouts.financial-coffee');
         //Mostrar vista
     }
 
