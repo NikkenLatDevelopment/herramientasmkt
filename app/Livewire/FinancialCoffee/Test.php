@@ -6,10 +6,13 @@ use Livewire\Component;
 use App\Models\Distributor;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\DB;
+use Livewire\WithFileUploads;
 
 class Test extends Component
 {
-    public int $tab = 0;
+    use WithFileUploads;
+
+    public int $tab = 1;
     public int $stage = 2;
 
     #[Validate('required')]
