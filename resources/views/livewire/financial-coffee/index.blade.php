@@ -74,7 +74,7 @@
 
                                         <hr class="text-secondary">
                                         <button type="submit" wire:target="photo" wire:loading.attr="disabled" class="btn btn-success rounded-4 py-3 w-100">Participar <i class="fa-solid fa-floppy-disk ms-1"></i> <span wire:loading  wire:target="photo"><div class="spinner-border spinner-border-sm ms-1" role="status"><span class="visually-hidden">Loading...</span></div></span></button>
-                                        <div class="mt-2"><a href="https://storage.googleapis.com/vivenikken/sites/regional/cafecito-financiero/terms/terminos-condiciones.pdf?<?php echo date('Ymdhms') ?>" target="_blank" class="small text-muted opacity-50">Términos y Condiciones</a></div>
+                                        <div class="mt-2"><a href="https://storage.googleapis.com/vivenikken/sites/regional/cafecito-financiero/terms/terminos-condiciones.pdf?<?php echo date('Ymdhms') ?>" target="_blank" class="small text-success">Términos y Condiciones</a></div>
                                     </form>
                                 </div>
 
@@ -84,10 +84,9 @@
                                         <p class="mb-0">Quedaste registrado/a para participar por un producto NIKKEN en el KicKoff Paso a paso de tu país.</p>
                                     @else
                                         <div class="h5 fw-bold text-success">¡Felicidades por exponer tu negocio y registrar tu evento!</div>
-                                        <p class="mb-0">Quedaste registrado/a gana bonos de Seguimiento perfecto.</p>
-                                        {{-- <p class="mb-0">Quedaste registrado/a gana bonos de Seguimiento perfecto por incorporación con kit sistema de agua desde la primera unidad y por compras desde la segunda unidad.</p> --}}
+                                        <p class="mb-0">Quedaste registrado/a gana bonos de Seguimiento perfecto por incorporación con kit sistema de agua desde la primera unidad y por compras desde la segunda unidad.</p>
 
-                                        {{-- @if (count($table) > 0)
+                                        @if (count($table) > 0)
                                             @php
                                             $totalIncorporation = 0;
                                             $bonusIncorporation = 0;
@@ -134,8 +133,10 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                        @endif --}}
+                                        @endif
                                     @endif
+
+                                    <div class="mt-4"><a href="https://storage.googleapis.com/vivenikken/sites/regional/cafecito-financiero/terms/terminos-condiciones.pdf?<?php echo date('Ymdhms') ?>" target="_blank" class="small text-success">Términos y Condiciones</a></div>
                                 </div>
                             </div>
                         </div>
